@@ -1,0 +1,77 @@
+.home_section {
+	height: 100vh;
+	width: 100vw;
+	font-family: "Exo 2", sans-serif;
+}
+
+.home {
+	background-color: rgba(3, 3, 3, 0.655);
+	height: 100%;
+	width: 100%;
+}
+
+.full_name {
+	height: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	font-family: "Yanone Kaffeesatz";
+	display: flex;
+	user-select: none;
+	color: white;
+
+	.wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 75px;
+
+		.letter {
+			transition: ease-out 1s;
+			transform: translateY(40%);
+		}
+
+		.shadow {
+			transform: scale(1, -1);
+			color: #b2b2b254;
+			transition: ease-in 5s, ease-out 5s;
+		}
+
+		&:hover {
+			.letter {
+				transform: translateY(-100%);
+			}
+
+			.shadow {
+				opacity: 0;
+				transform: translateY(100%);
+			}
+		}
+	}
+}
+
+.home_container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.last_name {
+	padding-left: 40px;
+	font-size: 80px;
+	font-weight: 500;
+}
+
+
+.home_content_description {
+	font-family: Playfair Display, sans-serif;
+	letter-spacing: 20px;
+	font-size: 30px;
+	line-height: 1;
+	color: white;
+}
