@@ -5,7 +5,8 @@
 }
 
 .projects {
-    height: 1000px;
+    height: 365px;
+    background-color: #0b0f08;
 }
 
 .all_projects {
@@ -24,17 +25,15 @@
 }
 
 .all_projects_category {
-    margin: 0px 68px;
+    margin: 0px 400px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 105px;
 }
 
-
-
 .p_category {
-    background-color: #f61717e0;
+    background-color: #000000e0;
     height: 53px;
     width: 120px;
     display: flex;
@@ -47,6 +46,7 @@
     font-weight: 800;
     border: 0;
     cursor: pointer;
+    border: 2px solid white;
 }
 
 
@@ -63,22 +63,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
-
-/* body {
-    font-family: 'Oswald', sans-serif;
-    background-color: #212121;
-
-    section {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-
-        .row {
-            align-items: center;
-            height: 100vh;
-        }
-    }
-} */
 
 .card {
     width: 400px;
@@ -150,15 +134,15 @@
         h1 {
             font-weight: 600;
             position: absolute;
-            bottom: 5px;
+            bottom: 0px;
             right: 50px;
-            color: rgb(222, 222, 222);
+            color: rgb(255, 255, 255);
             transform-style: preserve-3d;
             transition: ease all 2.3s;
             z-index: 3;
             font-size: 23px;
             transform: translateZ(0px);
-            text-shadow: 1px 1px black;
+            text-shadow: 2px 2px black;
         }
 
         .price {
