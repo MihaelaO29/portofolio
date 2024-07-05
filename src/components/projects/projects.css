@@ -1,0 +1,212 @@
+.projects_section {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.projects {
+    height: 1000px;
+}
+
+.all_projects {
+    margin: 50px 120px;
+}
+
+.project_heading {
+    height: 200px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.all_projects_category {
+    margin: 0px 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 105px;
+}
+
+
+
+.p_category {
+    background-color: #f61717e0;
+    height: 53px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: white;
+    text-shadow: 1px 0px black;
+    font-size: 16px;
+    font-weight: 800;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.project_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+/* body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #212121;
+
+    section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .row {
+            align-items: center;
+            height: 100vh;
+        }
+    }
+} */
+
+.card {
+    width: 400px;
+    position: relative;
+    height: 220px;
+    transition: ease all 2.3s;
+    perspective: 1200px;
+
+    &:hover {
+        .cover {
+            transform: rotateX(0deg) rotateY(-180deg);
+
+            &:before {
+                transform: translateZ(30px);
+                
+            }
+
+            &:after {
+                background-color: black;
+            }
+
+            h1 {
+                transform: translateZ(100px);
+            }
+
+            .price {
+                transform: translateZ(60px);
+            }
+
+            a {
+                transform: translateZ(-60px) rotatey(-180deg);
+            }
+        }
+    }
+
+    .cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        &:before {
+            content: '';
+            position: absolute;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+            transition: ease all 2.3s;
+            transform-style: preserve-3d;
+            transform: translateZ(0px);
+            
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 2;
+            transition: ease all 1.3s;
+            background: rgba(0, 0, 0, 0.356);
+            border-radius: 30px;
+        }
+
+        h1 {
+            font-weight: 600;
+            position: absolute;
+            bottom: 5px;
+            right: 50px;
+            color: rgb(222, 222, 222);
+            transform-style: preserve-3d;
+            transition: ease all 2.3s;
+            z-index: 3;
+            font-size: 23px;
+            transform: translateZ(0px);
+            text-shadow: 1px 1px black;
+        }
+
+        .price {
+            font-weight: 200;
+            position: absolute;
+            top: 55px;
+            right: 50px;
+            color: white;
+            transform-style: preserve-3d;
+            transition: ease all 2.3s;
+            z-index: 4;
+            font-size: 2em;
+            transform: translateZ(0px);
+        }
+    }
+
+    .card_back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #0b0f08;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(-1px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 30px;
+        a {
+            transform-style: preserve-3d;
+            transition: ease transform 2.3s, ease background .5s;
+            transform: translateZ(-1px) rotatey(-180deg);
+            background: transparent;
+            border: 1px solid white;
+            font-weight: 200;
+            font-size: 1.3em;
+            color: white;
+            padding: 14px 32px;
+            outline: none;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background-color: white;
+                color: #0b0f08;
+            }
+        }
+    }
+}
