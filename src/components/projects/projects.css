@@ -6,7 +6,7 @@
 
 .projects {
     height: 365px;
-    background-color: #0b0f08;
+    background-color: #0b0b0bf2;
 }
 
 .all_projects {
@@ -33,7 +33,7 @@
 }
 
 .p_category {
-    background-color: #000000e0;
+    background-color: #0b0b0b3b;
     height: 53px;
     width: 120px;
     display: flex;
@@ -41,7 +41,7 @@
     justify-content: center;
     border-radius: 40px;
     color: white;
-    text-shadow: 1px 0px black;
+    text-shadow: 1px 0px #0b0b0bf2;
     font-size: 16px;
     font-weight: 800;
     border: 0;
@@ -81,7 +81,7 @@
             }
 
             &:after {
-                background-color: black;
+                background-color: #0b0b0bf2;
             }
 
             h1 {
@@ -142,7 +142,7 @@
             z-index: 3;
             font-size: 23px;
             transform: translateZ(0px);
-            text-shadow: 2px 2px black;
+            text-shadow: 2px 2px #0b0b0bf2;
         }
 
         .price {
@@ -163,7 +163,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: #0b0f08;
+        background: #0b0b0bf2;
         transform-style: preserve-3d;
         transition: ease all 2.3s;
         transform: translateZ(-1px);
@@ -189,7 +189,7 @@
 
             &:hover {
                 background-color: white;
-                color: #0b0f08;
+                color: #0b0b0bf2;
             }
         }
     }

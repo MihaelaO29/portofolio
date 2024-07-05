@@ -1,6 +1,7 @@
 .nav_section {
     width: 100%;
     position: absolute;
+    z-index: 10;
     height: 80px;
     display: flex;
     align-items: center;
