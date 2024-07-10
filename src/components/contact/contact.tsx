@@ -32,12 +32,12 @@ function Contact() {
     <div className='contact_section'>
 
       <div className='contact'
-        style={{
+         style={{
           backgroundImage: `url(${contact_background})`,
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
+           backgroundRepeat: 'no-repeat',
+           backgroundPosition: 'center',
+         }}
       >
         <div className='contact_heading'>
 

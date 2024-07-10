@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .nav {
@@ -17,7 +18,7 @@
 }
 
 .logo {
-    color: white;
+    color: rgb(41, 41, 41);
     font-weight: 200;
 }
 
@@ -31,19 +32,17 @@
     width: 450px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 35px;
+    /* border-radius: 35px;
     backdrop-filter: blur(10px);
-    background-color: rgb(255 255 255 / 20%);
+    background-color: rgb(255 255 255 / 20%); */
 }
 
 .link {
-    text-shadow: 1px 1px 2px black;
-    font-weight: 300;
-    color: rgb(255 255 255 / 71%);
+    /* text-shadow: 1px 1px 2px black; */
+    color: rgb(0 0 0);
     cursor: pointer;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.link:hover {
-    color: white;
-}

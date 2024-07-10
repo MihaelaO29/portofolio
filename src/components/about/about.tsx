@@ -1,10 +1,136 @@
 import './about.css';
+import { motion } from "framer-motion";
+import html from '../../images/html.svg';
+import css from '../../images/css.svg';
+import javascript from '../../images/javascript.svg';
+import react from '../../images/react.svg';
+import redux from '../../images/redux.svg';
+import typescript from '../../images/typescript.svg';
+import git from '../../images/git.svg';
+import gitHub from '../../images/github.svg';
+import gitLab from '../../images/gitlab.svg';
+import responsive from '../../images/responsive.svg';
+import npm from '../../images/npm.svg';
+import framer from '../../images/framer.svg';
+import figma from '../../images/figma.svg';
+import webpack from '../../images/webpack.svg';
 
 
 function About() {
+  interface ISkills {
+    imageUrl: string;
+    name: string;
+  }
+
+  const skills = [
+    {
+      imageUrl: html,
+      name: "Html",
+    },
+    {
+      imageUrl: css,
+      name: "CSS",
+    },
+    {
+      imageUrl: javascript,
+      name: "Javascript",
+    },
+    {
+      imageUrl: react,
+      name: "React",
+    },
+    {
+      imageUrl: redux,
+      name: "Redux",
+    },
+    {
+      imageUrl: typescript,
+      name: "TypeScript",
+    },
+    {
+      imageUrl: git,
+      name: "Git",
+    },
+    {
+      imageUrl: gitHub,
+      name: "GitHub",
+    },
+    {
+      imageUrl: gitLab,
+      name: "GitLab",
+    },
+    {
+      imageUrl: responsive,
+      name: "Responsive",
+    },
+    {
+      imageUrl: npm,
+      name: "Npm",
+    },
+    {
+      imageUrl: framer,
+      name: "Framer",
+    },
+    {
+      imageUrl: figma,
+      name: "Figma",
+    },
+    {
+      imageUrl: webpack,
+      name: "Webpack",
+    },
+  ];
   return (
-<div></div>
+    <div className='about_section'>
+      <div className='about'>
+
+        <div className='about_content'>
+          <div className='about_text'>
+            <div className='about_heading'>
+              About Me
+            </div>
+            <div className='text_description'>
+              I'm a Front-End Developer for Romania.
+              I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.<br />
+              I'm passionate about music, technology and basically everything that makes the internet tick.
+            </div>
+          </div>
+        </div>
+        <div className='skills_details'>
+
+
+        <div className='about_skills_title'>
+            <div>Skills</div>
+             
+
+            <div className='about_skills_description'>
+          {skills.map((skill) => (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.1 }}
+              className="tooltip tooltip-top" data-tip={skill.name}>
+              <div className='block-container w-20 h-20 cursor-pointer' key={skill.name}>
+                <div className='btn-back' />
+                <div className='btn-front'>
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className='skills_name'
+                  />
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
   )
 }
 
-      export default About;
+export default About;
