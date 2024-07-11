@@ -38,7 +38,7 @@ function About() {
     {
       imageUrl: react,
       name: "React",
-    },
+    },  
     {
       imageUrl: redux,
       name: "Redux",
@@ -99,11 +99,11 @@ function About() {
         <div className='skills_details'>
 
 
-        <div className='about_skills_title'>
-            <div>Skills</div>
+  
+  
              
 
-            <div className='about_skills_description'>
+            {/* <div className='about_skills_description'>
           {skills.map((skill) => (
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -122,12 +122,24 @@ function About() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
+
+<div className="skills-container">
+      <h1>Skills</h1>
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <div className="skill-item" key={index}>
+            <img src={skill.imageUrl} alt={skill.name} />
+            <div className="tooltip">{skill.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
             </div>
           </div>
         </div>
-      </div>
+
   
     
   )

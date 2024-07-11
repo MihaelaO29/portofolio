@@ -1,12 +1,13 @@
 .contact_section {
   overflow-x: hidden;
   font-family: inherit;
+  background-color: #f4f4f4;
 }
 
 .contact_heading {
   height: 100%;
   width: 100%;
-   background-color: #33005179; 
+   /* background-color: #33005179;  */
 }
 
 .contact {
@@ -16,7 +17,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #1c1b1bf7;
+  /* background-color: #1c1b1bf7; */
 }
 
 .contact_container {
@@ -69,7 +70,7 @@
   border: none;
   outline: none;
   border-radius: 25px;
-  background-color: #e6e6e6;
+  background-color: #f4f4f4;
   font-family: inherit;
   font-size: 15px;
   line-height: 1.5;
@@ -115,7 +116,7 @@
   padding-bottom: 10px;
   display: flex;
   align-items: center;
-  background-color: #E5E5E5;
+  background-color: #f4f4f4;
   border-radius: 25px;
   padding: 5px 15px;
   margin-bottom: 10px;

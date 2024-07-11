@@ -3,7 +3,7 @@
     height: 100vh;
     overflow-x: hidden;
     /* background-color: #2aaa97f2; */
-    background-color: #fffffff2;
+    background-color: #f4f3f2;
 }
 
 .all_projects {
@@ -22,7 +22,7 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     letter-spacing: -.2px;
     line-height: 1.3;
