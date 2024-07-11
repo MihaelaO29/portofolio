@@ -7,7 +7,6 @@
 .contact_heading {
   height: 100%;
   width: 100%;
-   /* background-color: #33005179;  */
 }
 
 .contact {
@@ -17,7 +16,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #1c1b1bf7; */
 }
 
 .contact_container {
@@ -55,7 +53,7 @@
   text-align: center;
   padding-bottom: 30px;
   font-weight: 900;
-  color: #000000;
+  color: #101010;
   font-size: 18px;
 }
 
@@ -86,7 +84,7 @@
   width: 405px;
   height: 50px;
   border-radius: 25px;
-  background: #846add;
+  background: #e84141;
   font-weight: 800;
   font-size: 15px;
   line-height: 1.5;
@@ -108,7 +106,7 @@
 }
 
 .contact_btn:hover {
-  background-color: #161616;
+  background-color: #101010;
 }
 
 .form_text_input {
@@ -144,7 +142,6 @@
 
 .contact_info{
   height: 330px;
-  background-color: #111010;
   width: 100%;
   display: flex;
   align-items: center;
@@ -163,7 +160,7 @@
 
 .option1,
 .option2{
-border-right: 1px solid rgb(94, 66, 255);
+border-right: 1px solid #101010;
 }
 
 .option1,
@@ -176,14 +173,14 @@ border-right: 1px solid rgb(94, 66, 255);
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    color: white;
+    color: #101010;
     font-weight: 700;
     font-size: 18px;
 }
 
 
 .contact_info_heading{
-  color: white;
+  color: #e84141;
   margin: 20px 0;
   font-size: 20px;
   line-height: 1.5;
@@ -192,9 +189,13 @@ border-right: 1px solid rgb(94, 66, 255);
 }
 
 .option_details{
-  color: #846add;
+  color: #101010;
   font-weight: 600;
   font-size: 17px;
 }
 
 
+.icon{
+  height: 30px;
+  margin-bottom: 10px;
+}

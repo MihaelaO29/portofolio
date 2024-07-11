@@ -28,13 +28,14 @@
 
 .text_description{
 padding-top: 30px;
+text-align: center;
 }
 
 .skills-container {
   height: 260px;
   text-align: center;
   background-color: white;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 20px 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 120px;

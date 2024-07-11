@@ -90,7 +90,7 @@ function About() {
               About Me
             </div>
             <div className='text_description'>
-              I'm a Front-End Developer for Romania.
+              I'm a Front-End Developer from Romania.
               I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.<br />
               I'm passionate about music, technology and basically everything that makes the internet tick.
             </div>

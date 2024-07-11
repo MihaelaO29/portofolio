@@ -1,12 +1,14 @@
 import './contact.css';
 import { useSpring, animated } from '@react-spring/web';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import {faUser} from '@fortawesome/free-solid-svg-icons';
 import contact from '../../images/contact.webp';
-import user from '../../images/user.png';
-import message from '../../images/message.png';
 import contact_background from '../../images/contact_background.jpg';
 import arrow from '../../images/arrow.png';
-import phone from '../../images/phone.png';
-import email from '../../images/contact_email.png';
+
 
 
 function Contact() {
@@ -31,14 +33,7 @@ function Contact() {
   return (
     <div className='contact_section'>
 
-      <div className='contact'
-        //  style={{
-        //   backgroundImage: `url(${contact_background})`,
-        //   backgroundSize: 'cover',
-        //    backgroundRepeat: 'no-repeat',
-        //    backgroundPosition: 'center',
-        //  }}
-      >
+      <div className='contact'>
         <div className='contact_heading'>
 
           <div className='contact_container'>
@@ -52,12 +47,12 @@ function Contact() {
                 <form className='form'>
                   <div className='form_heading'>CONTACT ME</div>
                   <div className='form_text_input'>
-                    <img className='input_img' src={user} alt='user' />
+                  <FontAwesomeIcon className='input_img' icon={faUser} />
                     <input className='form_input' type='text' placeholder='Name' name='name' required />
                   </div>
 
                   <div className='form_text_input'>
-                    <img className='input_img' src={message} alt='message' />
+                  <FontAwesomeIcon className='input_img' icon={faEnvelope} />
                     <input className='form_input' type='email' placeholder='Email' name='email' required />
 
                   </div>
@@ -81,19 +76,19 @@ function Contact() {
   <div className='contact_info_heading'>Get in touch with me!</div>
 <div className='contact_options'>
 <div className='option1' >
-<img src={phone} alt='phone'/>
+<FontAwesomeIcon  className='icon' icon={faPhone} />
 <div>PHONE</div>
 <div className='option_details'>0755239095</div>
 </div>
 
 <div className='option2'>
-<img/>
+<FontAwesomeIcon className='icon' icon={faLocationDot} />
 <div>ADDRESS</div>
 <div className='option_details'>Romania</div>
 </div>
 
 <div className='option3'>
-<img src={email} alt='email'/>
+<FontAwesomeIcon className='icon' icon={faEnvelope} />
 <div>EMAIL</div>
 <div className='option_details'>opriamihaela22@yahoo.com</div>
 </div>
