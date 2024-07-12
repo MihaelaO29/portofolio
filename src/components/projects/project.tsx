@@ -19,21 +19,21 @@ function Projects() {
 		<div className='projects_section'>
 			<div className='projects'>
 				<div className='pp'>
-				<div className='project_heading'>MY PROJECTS</div>
-				<div className='projects_details'>
-				</div>
+					<div className='project_heading'>MY PROJECTS</div>
+					<div className='projects_details'>
+					</div>
 					<div className='all_projects_category'>
 						<div className='projects_category' onClick={() => handleCategoryChange(Category.ALL)}
-							style={{ backgroundColor: selectedCategory === Category.ALL ? 'rgb(31 31 31 / 95%);' : 'rgb(26 26 26 / 0%)' }}
+							style={{ backgroundColor: selectedCategory === Category.ALL ? '#262626e6' : 'rgb(26 26 26 / 0%)', }}
 						>All</div>
 						<div className='projects_category' onClick={() => handleCategoryChange(Category.HTML_CSS)}
-							style={{ backgroundColor: selectedCategory === Category.HTML_CSS ? 'rgb(31 31 31 / 95%);' : 'rgb(26 26 26 / 0%)' }}
+							style={{ backgroundColor: selectedCategory === Category.HTML_CSS ? '#262626e6' : 'rgb(26 26 26 / 0%)' }}
 						>HTML/CSS</div>
 						<div className='projects_category' onClick={() => handleCategoryChange(Category.JS)}
-							style={{ backgroundColor: selectedCategory === Category.JS ? 'rgb(31 31 31 / 95%);' : 'rgb(26 26 26 / 0%)' }}
+							style={{ backgroundColor: selectedCategory === Category.JS ? '#262626e6' : 'rgb(26 26 26 / 0%)' }}
 						>JS</div>
 						<div className='projects_category' onClick={() => handleCategoryChange(Category.REACT)}
-							style={{ backgroundColor: selectedCategory === Category.REACT ? 'rgb(31 31 31 / 95%);' : 'rgb(26 26 26 / 0%)' }}
+							style={{ backgroundColor: selectedCategory === Category.REACT ? '#262626e6' : 'rgb(26 26 26 / 0%)' }}
 						>React</div>
 					</div>
 

@@ -13,7 +13,6 @@ import responsive from '../../images/responsive.svg';
 import npm from '../../images/npm.svg';
 import framer from '../../images/framer.svg';
 import figma from '../../images/figma.svg';
-import webpack from '../../images/webpack.svg';
 
 
 function About() {
@@ -22,7 +21,7 @@ function About() {
     name: string;
   }
 
-  const skills = [
+  const skills: ISkills[] = [
     {
       imageUrl: html,
       name: "Html",
@@ -38,7 +37,7 @@ function About() {
     {
       imageUrl: react,
       name: "React",
-    },  
+    },
     {
       imageUrl: redux,
       name: "Redux",
@@ -74,12 +73,9 @@ function About() {
     {
       imageUrl: figma,
       name: "Figma",
-    },
-    {
-      imageUrl: webpack,
-      name: "Webpack",
-    },
+    }
   ];
+
   return (
     <div className='about_section'>
       <div className='about'>
@@ -98,50 +94,23 @@ function About() {
         </div>
         <div className='skills_details'>
 
-
-  
-  
-             
-
-            {/* <div className='about_skills_description'>
-          {skills.map((skill) => (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.1 }}
-              className="tooltip tooltip-top" data-tip={skill.name}>
-              <div className='block-container w-20 h-20 cursor-pointer' key={skill.name}>
-                <div className='btn-back' />
-                <div className='btn-front'>
-                  <img
-                    src={skill.imageUrl}
-                    alt={skill.name}
-                    className='skills_name'
-                  />
+          <div className="skills-container">
+            <h1>Skills</h1>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <div className="skill-item" key={index}>
+                  <img src={skill.imageUrl} alt={skill.name} />
+                  <div className="tooltip">{skill.name}</div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </div> */}
-
-
-<div className="skills-container">
-      <h1>Skills</h1>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div className="skill-item" key={index}>
-            <img src={skill.imageUrl} alt={skill.name} />
-            <div className="tooltip">{skill.name}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+              ))}
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-  
-    
+
+
   )
 }
 

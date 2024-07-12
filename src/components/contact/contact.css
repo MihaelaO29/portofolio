@@ -1,7 +1,8 @@
 .contact_section {
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
-  font-family: inherit;
-  background-color: #f4f4f4;
+  background-color: #f4f3f2;
 }
 
 .contact_heading {
@@ -159,13 +160,15 @@
 }
 
 .option1,
-.option2{
+.option2,
+.option3{
 border-right: 1px solid #101010;
 }
 
 .option1,
 .option2,
-.option3
+.option3,
+.option4
 {
     height: 50%;
     width: 100%;
@@ -178,6 +181,11 @@ border-right: 1px solid #101010;
     font-size: 18px;
 }
 
+.icon_social{
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 10px;
+}
 
 .contact_info_heading{
   color: #e84141;

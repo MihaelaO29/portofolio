@@ -5,6 +5,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import contact from '../../images/contact.webp';
 import contact_background from '../../images/contact_background.jpg';
 import arrow from '../../images/arrow.png';
@@ -91,6 +92,12 @@ function Contact() {
 <FontAwesomeIcon className='icon' icon={faEnvelope} />
 <div>EMAIL</div>
 <div className='option_details'>opriamihaela22@yahoo.com</div>
+</div>
+
+<div className='option4'>
+<FontAwesomeIcon className='icon_social' icon={faLinkedin} />
+<div>Social</div>
+<div className='option_details'>LinkedIn Profile</div>
 </div>
 </div>
     </div>
