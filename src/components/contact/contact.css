@@ -35,6 +35,9 @@
   background-color: white;
   border-radius: 20px;
 }
+.contact_img_moving{
+  height: 500px;
+}
 
 .wrap_contact,
 .contact_img {

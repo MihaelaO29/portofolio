@@ -6,8 +6,7 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import contact from '../../images/contact.webp';
-import contact_background from '../../images/contact_background.jpg';
+import contact from '../../images/contact.png';
 import arrow from '../../images/arrow.png';
 
 
