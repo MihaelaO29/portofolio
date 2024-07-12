@@ -3,7 +3,7 @@
     height: 100vh;
     overflow-x: hidden;
     background-color: #f4f3f2;
-    font-family: Arial, sans-serif;  
+    font-family: Arial, sans-serif;
 }
 
 .all_projects {
@@ -11,7 +11,7 @@
     margin: 50px 80px;
 }
 
-.pp{
+.project_container {
     height: 470px;
     background-color: #e84141;
     margin-top: 35px;
@@ -136,7 +136,7 @@ background-color: #ffffff;
             bottom: 0px;
             z-index: 2;
             transition: ease all 1.3s;
-             background: rgba(0, 0, 0, 0.212); 
+            background: rgba(0, 0, 0, 0.212);
             border-radius: 30px;
         }
 

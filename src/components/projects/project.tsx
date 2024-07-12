@@ -18,7 +18,7 @@ function Projects() {
 	return (
 		<div className='projects_section'>
 			<div className='projects'>
-				<div className='pp'>
+				<div className='project_container'>
 					<div className='project_heading'>MY PROJECTS</div>
 					<div className='projects_details'>
 					</div>
