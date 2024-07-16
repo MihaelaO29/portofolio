@@ -94,14 +94,21 @@ function About() {
         </div>
         <div className='skills_details'>
 
+       
           <div className="skills-container">
             <h1>Skills</h1>
             <div className="skills-grid">
               {skills.map((skill, index) => (
-                <div className="skill-item" key={index}>
+                   <motion.div
+                 className="skill-item" 
+                 key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0, transition: { delay: index * 0.1, duration: 0.2 } }}
+                  viewport={{ once: false, amount: 0.5 }}
+         >
                   <img src={skill.imageUrl} alt={skill.name} />
                   <div className="tooltip">{skill.name}</div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
