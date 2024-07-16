@@ -15,7 +15,9 @@ function Home() {
                 <div className='home_container'>
                     <div className='full_name'>
                         <div className='overlay'>
+                            <div className='first_name'>
                             <div className='text'>
+
                                 <div className='wrapper'>
                                     <div className='letter'>M</div>
                                     <div className='shadow'>M</div>
@@ -44,7 +46,7 @@ function Home() {
                                     <div className='letter'>A</div>
                                     <div className='shadow'>A</div>
                                 </div>
-
+                                </div>
 
                                 <div className='last_name'>
                                     <div className='text'>

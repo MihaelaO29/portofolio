@@ -56,8 +56,8 @@
 .close_btn{
     position: absolute;
     z-index: 2;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
     color: #ffffff;
     height: 30px;
 }

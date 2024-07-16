@@ -78,7 +78,7 @@ function About() {
 
   return (
     <div className='about_section'>
-      <div className='about'>
+    
 
         <div className='about_content'>
           <div className='about_text'>
@@ -106,7 +106,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+     
     </div>
 
 

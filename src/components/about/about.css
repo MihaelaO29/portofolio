@@ -9,60 +9,96 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 55%;
 }
+
+.skills_details{
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .about_heading{
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 20px;
+    @media only screen and (max-width: 550px) {
+      font-size: 40px
+    }  
 }
 .about_text {
-  height: 395px;
+  height: 55%;
   align-items: center;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 1000px) {
+    width: 500px;
+ }  
+ @media only screen and (max-width: 550px) {
+  width: 300px;
+}  
 }
 
 .text_description{
 padding-top: 30px;
 text-align: center;
+@media only screen and (max-width: 550px) {
+ font-size: 14px;
+}  
 }
 
 .skills-container {
-  height: 260px;
+  height: 240px;
   text-align: center;
   background-color: white;
-  padding: 5px 10px 20px 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 120px;
+  padding-bottom: 15px;
+  @media only screen and (max-width: 1000px) {
+    height: 350px;
+    padding-bottom: 0;
+ }  
+ @media only screen and (max-width: 1000px) {
+  height: 440px;
+}  
 }
 
 .skills-container h1 {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin: 0 140px;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  margin: 0 100px;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+ }  
+ @media only screen and (max-width: 550px) {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 0 50px;
+}  
 }
 
 .skill-item {
-  height: 70px;
-  width: 75px;
+  height: 65px;
+  width: 70px;
   position: relative;
   background: #ffffff;
-  border-radius: 15px;
-  background: #ffffff;
   border-radius: 20px 40px 20px 40px; 
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 5px 5px;
   transition: transform 0.3s;
   display: flex;
@@ -71,11 +107,21 @@ text-align: center;
   cursor: pointer;
   box-shadow: 16px 0 40px #dbd9d9;
   overflow: visible; 
+  @media only screen and (max-width: 1000px) {
+    height: 55px;
+    width: 50px;
+ }  
+ @media only screen and (max-width: 550px) {
+  height: 45px;
+  width: 40px;
+}  
 }
-
 
 .skill-item img {
   height: 40px;
+  @media only screen and (max-width: 1000px) {
+    width: 30px;
+ } 
 }
 
 .skill-item:hover {
@@ -84,8 +130,8 @@ text-align: center;
 
 .tooltip {
   position: absolute;
- bottom: 80px; 
- left: 50%;
+  bottom: 80px; 
+  left: 50%;
   transform: translateX(-50%);
   background-color: #0c0b0b;
   color: #fff;
