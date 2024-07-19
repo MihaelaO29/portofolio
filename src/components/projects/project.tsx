@@ -47,10 +47,9 @@ function Projects() {
 											backgroundImage: `url(${project.image})`
 										}}
 									>
-										{/* <h1>{project.title}</h1> */}
 
 										<div className="card_back">
-											<a href={project.linkProject} target="_blank">See project</a>
+											<a href={project.linkProject} target="_blank" rel="noreferrer">See project</a>
 											<a href={project.linkGitHub}><FontAwesomeIcon icon={faGithub} /></a>
 										</div>
 									</div>
