@@ -1,5 +1,4 @@
 import './contact.css';
-import { useSpring, animated } from '@react-spring/web';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -12,27 +11,8 @@ import arrow from '../../images/arrow.png';
 
 
 function Contact() {
-
-  interface MovingImageProps {
-    src: string;
-    alt: string;
-  }
-
-  const MovingImage: React.FC<MovingImageProps> = ({ src, alt }) => {
-    const props = useSpring({
-      from: { transform: 'translateY(0px)' },
-      to: { transform: 'translateY(-20px)' },
-      config: { duration: 1000 },
-      loop: { reverse: true },
-    });
-
-    return <animated.img src={src} alt={alt} style={props} className="moving-image" />;
-  };
-
-
   return (
     <div className='contact_section'>
-
       <div className='contact'>
         <div className='contact_heading'>
 
@@ -46,19 +26,22 @@ function Contact() {
 
                 <form className='form'>
                   <div className='form_heading'>CONTACT ME</div>
+                  
+    
                   <div className='form_text_input'>
                     <FontAwesomeIcon className='input_img' icon={faUser} />
                     <input className='form_input' type='text' placeholder='Name' name='name' required />
+                    <span className='focus_input'></span>
                   </div>
 
                   <div className='form_text_input'>
                     <FontAwesomeIcon className='input_img' icon={faEnvelope} />
                     <input className='form_input' type='email' placeholder='Email' name='email' required />
-
+                    <span className='focus_input'></span>
                   </div>
-
-                  <div className='form_text_textarea'>
+                  <div className='form_text_input'>
                     <textarea className='form_textarea' placeholder='Message' name='text' required></textarea>
+                    <span className='focus_input'></span>
                   </div>
                   <button className='contact_btn'>SEND</button>
                 </form>
@@ -66,10 +49,9 @@ function Contact() {
             </div>
           </div>
           <div className='arrow_img'>
-            <MovingImage src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" />
           </div>
         </div>
-
       </div>
 
       <div className='contact_info'>
