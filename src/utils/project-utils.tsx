@@ -12,6 +12,7 @@ import project_11 from '../images/project_11.png';
 import project_12 from '../images/project_12.png';
 import project_13 from '../images/project_13.png';
 import project_14 from '../images/project_14.png';
+import project_15 from '../images/project_15.png';
 
 export enum Category {
     ALL,
@@ -128,7 +129,7 @@ const projects: IProject[] = [
         category: Category.REACT
     },
     {
-        image: project_14,
+        image: project_15,
         title: 'Travel',
         linkProject: 'https://travel-page-m.netlify.app/',
         linkGitHub: 'https://github.com/MihaelaO29/travel-landing-page',
