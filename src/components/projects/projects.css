@@ -55,7 +55,6 @@
         height: 175px;
         flex-direction: column;
         margin-top:15px;
-
     }
 
 }
@@ -72,14 +71,14 @@
     font-size: 16px;
     font-weight: 800;
     cursor: pointer;
-    border: 1px solid white;
+    border: 2px solid white;
+    background-color:  #f4f3f2;
     @media only screen and (max-width: 700px) {
         height: 40px;
         width: 85px;
         font-size: 10px;
     }
     @media only screen and (max-width: 450px) {
-
         font-size: 10px;
     }
 }
@@ -102,7 +101,6 @@
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
-
     @media only screen and (max-width: 700px) {
         grid-template-columns: repeat(1, 300px);
         grid-column-gap: 30px;
@@ -138,23 +136,20 @@
 
             &:before {
                 transform: translateZ(30px);
-
             }
 
             &:after {
                 background-color: #0b0b0bf2;
             }
-
             h1 {
                 transform: translateZ(100px);
             }
-
             .price {
                 transform: translateZ(60px);
             }
-
             a {
                 transform: translateZ(-60px) rotatey(-180deg);
+                color:rgb(117, 117, 117);
             }
         }
     }
@@ -169,7 +164,6 @@
         background-position: center center;
         background-repeat: no-repeat;
         border-radius: 30px;
-
         &:before {
             content: '';
             position: absolute;
@@ -229,13 +223,12 @@
            display: flex;
            align-items: center;
            justify-content: center;
+
         }
         @media only screen and (max-width: 500px) {
             height:15px;
             width: 100px;
         }
-    
-
     }
 
     .card_back {
@@ -257,7 +250,7 @@
             transition: ease transform 2.3s, ease background .5s;
             transform: translateZ(-1px) rotatey(-180deg);
             background: transparent;
-            border: 1px solid white;
+            border: 2px solid rgb(117, 117, 117);
             font-weight: 200;
             font-size: 1.3em;
             color: white;
@@ -271,7 +264,7 @@
             }
             &:hover {
                 background-color: white;
-                color: #0b0b0bf2;
+        
             }
         }
     }
