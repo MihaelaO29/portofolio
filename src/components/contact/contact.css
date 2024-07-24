@@ -17,6 +17,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media only screen and (max-width: 3000px) {
+    height: 750px;
+  }
+
 }
 
 .contact_container {
@@ -24,6 +28,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 120px;
+  
 }
 
 .form_contact_details {
