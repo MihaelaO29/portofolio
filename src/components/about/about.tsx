@@ -79,7 +79,6 @@ function About() {
   return (
     <div className='about_section'>
 
-
       <div className='about_content'>
         <div className='about_text'>
           <div className='about_heading'>
@@ -96,7 +95,6 @@ function About() {
             Thank you for visiting my portfolio! I look forward to the opportunity to collaborate and create something
             amazing together.
             <br />
-
           </div>
         </div>
       </div>
