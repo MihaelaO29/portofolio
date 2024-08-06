@@ -13,6 +13,9 @@ import project_12 from '../images/project_12.png';
 import project_13 from '../images/project_13.png';
 import project_14 from '../images/project_14.png';
 import project_15 from '../images/project_15.png';
+import project_16 from '../images/project_16.png';
+import project_17 from '../images/project_17.png';
+import project_18 from '../images/project_18.png';
 
 export enum Category {
     ALL,
@@ -135,7 +138,27 @@ const projects: IProject[] = [
         linkGitHub: 'https://github.com/MihaelaO29/travel-landing-page',
         category: Category.JS
     },
-
+    {
+        image: project_16,
+        title: 'Send',
+        linkProject: 'https://send-m.netlify.app/',
+        linkGitHub: 'https://github.com/MihaelaO29/Send',
+        category: Category.HTML_CSS
+    },
+    {
+        image: project_17,
+        title: 'Adventure',
+        linkProject: 'https://adventure-m.netlify.app/',
+        linkGitHub: 'https://github.com/MihaelaO29/Adventure',
+        category: Category.HTML_CSS
+    },
+    {
+        image: project_18,
+        title: 'Monster-Rolodex',
+        linkProject: 'https://monster-rolodex-m.netlify.app/',
+        linkGitHub: 'https://github.com/MihaelaO29/monster-rolodex',
+        category: Category.JS
+    },
 ];
 
 export default projects;
