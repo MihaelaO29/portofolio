@@ -49,7 +49,7 @@ function Projects() {
 									>
 										<div className='card_back'>
 											<a className='card_description' href={project.linkProject} target="_blank" rel="noreferrer">See project</a>
-											<a className='card_link' href={project.linkGitHub}><FontAwesomeIcon icon={faGithub} /></a>
+											<a className='card_link' href={project.linkGitHub} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
 										</div>
 									</div>
 								</div>
