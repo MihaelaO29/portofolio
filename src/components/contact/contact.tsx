@@ -72,7 +72,7 @@ function Contact() {
           <div className='option3'>
             <FontAwesomeIcon className='icon' icon={faEnvelope} />
             <div>EMAIL</div>
-            <div className='option_details'>opriamihaela22@yahoo.com</div>
+            <div className='option_details'>opriamihaela22@gmail.com</div>
           </div>
 
           <div className='option4'>
