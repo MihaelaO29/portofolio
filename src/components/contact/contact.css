@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   @media only screen and (max-width: 3000px) {
     height: 750px;
   }
@@ -27,7 +28,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  
+
 }
 
 .form_contact_details {
@@ -42,9 +43,17 @@
 
 .contact_img_moving {
   height: 100%;
-  
+
 }
-.wrap_contact,
+
+.wrap_contact {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact_img {
   width: 50%;
   height: 100%;
@@ -64,6 +73,7 @@
     width: 100%;
     margin-right: 40px;
   }
+
   @media only screen and (max-width: 700px) {
     margin-right: 40px;
   }
@@ -80,9 +90,11 @@
 
 .form {
   width: 70%;
+
   @media only screen and (max-width: 700px) {
     width: 260px;
   }
+
   @media only screen and (max-width: 500px) {
     width: 160px;
   }
@@ -105,6 +117,7 @@
   font-size: 15px;
   line-height: 1.5;
   font-weight: 800;
+
   @media only screen and (max-width: 500px) {
     font-weight: 200;
   }
@@ -146,6 +159,7 @@
   transition: all 0.4s;
   border: 0;
   cursor: pointer;
+
   @media only screen and (max-width: 500px) {
     width: 135%;
   }
@@ -166,6 +180,7 @@
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
+
   @media only screen and (max-width: 500px) {
     padding: 5px 25px;
   }
@@ -195,6 +210,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   @media only screen and (max-width: 1000px) {
     height: 700px;
   }
@@ -207,6 +223,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
   }
@@ -264,7 +281,7 @@ input.form_input {
   border-radius: 25px;
   padding: 0 0 0 15px;
   border: 0;
-  
+
 }
 
 textarea.form_input {
@@ -286,11 +303,11 @@ textarea.form_input {
   color: rgba(202, 2, 2, 0.705);
 }
 
-.form_input:focus + .focus_input,
-.form_textarea:focus + .focus_input {
+.form_input:focus+.focus_input,
+.form_textarea:focus+.focus_input {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
-  
+
 }
 
 .form_text_input:focus-within .input_img {
