@@ -330,3 +330,7 @@ textarea.form_input {
     opacity: 0;
   }
 }
+
+.contact_option {
+  cursor: pointer;
+}

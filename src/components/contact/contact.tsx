@@ -22,7 +22,7 @@ function Contact() {
         .then(
           () => {
             console.log('SUCCESS!');
-            form.current?.reset(); 
+            form.current?.reset();
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -30,6 +30,22 @@ function Contact() {
         );
     }
   };
+
+  const openPhoneNumber = () => {
+    window.open('tel:+0755239095', '_blank');
+  }
+
+  const openEmail = () => {
+    window.open('mailto:opriamihaela22@gmail.com', '_blank');
+  }
+
+  const openGoogleMaps = () => {
+    window.open(`https://www.google.com/maps/place/Bucure%C8%99ti/@44.4379524,25.929828,11z/data=!3m1!4b1!4m6!3m5!1s0x40b1f93abf3cad4f:0xac0632e37c9ca628!8m2!3d44.4267674!4d26.1025384!16zL20vMDk2Z20?entry=ttu`, '_blank');
+  }
+
+  const openLinkedin = () => {
+    window.open('https://www.linkedin.com/in/mihaela-opria-03a8252b7/', '_blank');
+  }
 
   return (
     <div className='contact_section'>
@@ -77,25 +93,25 @@ function Contact() {
       <div className='contact_info'>
         <div className='contact_info_heading'>Get in touch with me!</div>
         <div className='contact_options'>
-          <div className='option1' >
+          <div className='option1 contact_option' onClick={openPhoneNumber} >
             <FontAwesomeIcon className='icon' icon={faPhone} />
             <div>PHONE</div>
             <div className='option_details'>0755239095</div>
           </div>
 
-          <div className='option2'>
+          <div className='option2 contact_option' onClick={openGoogleMaps}>
             <FontAwesomeIcon className='icon' icon={faLocationDot} />
             <div>ADDRESS</div>
             <div className='option_details'>Romania</div>
           </div>
 
-          <div className='option3'>
+          <div className='option3 contact_option' onClick={openEmail}>
             <FontAwesomeIcon className='icon' icon={faEnvelope} />
             <div>EMAIL</div>
             <div className='option_details'>opriamihaela22@gmail.com</div>
           </div>
 
-          <div className='option4'>
+          <div className='option4 contact_option' onClick={openLinkedin}>
             <FontAwesomeIcon className='icon_social' icon={faLinkedin} />
             <div>Social</div>
             <div className='option_details'>LinkedIn Profile</div>
