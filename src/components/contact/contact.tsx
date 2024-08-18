@@ -9,6 +9,7 @@ import contact from '../../images/contact.png';
 import arrow from '../../images/arrow.png';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -21,11 +22,11 @@ function Contact() {
         .sendForm('opriamihaela22@gmail.com', 'template_28buh0j', form.current, 'fnWTaPBE4gasSM1vw')
         .then(
           () => {
-            console.log('SUCCESS!');
+            toast.success("Thank you for your message 😃");
             form.current?.reset();
           },
-          (error) => {
-            console.log('FAILED...', error.text);
+          () => {
+            toast.error("I didn't receive your message 😢");
           },
         );
     }

@@ -10,6 +10,8 @@ import writeUserData from './utils/firebase-utils';
 import { LAST_VISIT_TIME, USER_ID } from './utils/constants';
 import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   useEffect(() => {
@@ -37,6 +39,18 @@ function App() {
   return (
     <Router>
       <div>
+        <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
