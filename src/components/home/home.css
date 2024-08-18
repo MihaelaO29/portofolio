@@ -111,3 +111,12 @@
 		letter-spacing: 5px;
 	 }  
 }
+
+.active_letter {
+	transform: translateY(-100%) !important;
+}
+
+.active_shadow {
+	opacity: 0;
+	transform: translateY(100%) !important;
+}
