@@ -10,12 +10,16 @@ import arrow from '../../images/arrow.png';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import Spinner from '../../utils/spinner/spinner';
+import { useState } from 'react';
 
 function Contact() {
+  const [spinner, setSpinner] = useState(false);
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSpinner(true);
 
     if (form.current) {
       emailjs
@@ -24,11 +28,15 @@ function Contact() {
           () => {
             toast.success("Thank you for your message 😃");
             form.current?.reset();
+            setSpinner(false);
           },
           () => {
             toast.error("I didn't receive your message 😢");
+            setSpinner(false);
           },
         );
+    } else {
+      setSpinner(false);
     }
   };
 
@@ -41,7 +49,7 @@ function Contact() {
   }
 
   const openGoogleMaps = () => {
-    window.open(`https://www.google.com/maps/place/Bucure%C8%99ti/@44.4379524,25.929828,11z/data=!3m1!4b1!4m6!3m5!1s0x40b1f93abf3cad4f:0xac0632e37c9ca628!8m2!3d44.4267674!4d26.1025384!16zL20vMDk2Z20?entry=ttu`, '_blank');
+    window.open(`https://www.google.com/maps/place/Bra%C8%99ov/@45.6525685,25.5140617,12z/data=!3m1!4b1!4m6!3m5!1s0x40b35b862aa214f1:0x6cf5f2ef54391e0f!8m2!3d45.6426802!4d25.5887252!16zL20vMGhqdGc?entry=ttu`, '_blank');
   }
 
   const openLinkedin = () => {
@@ -66,21 +74,25 @@ function Contact() {
 
                   <div className='form_text_input'>
                     <FontAwesomeIcon className='input_img' icon={faUser} />
-                    <input className='form_input' type='text' placeholder='Name' name='user_name' required />
+                    <input className='form_input' type='text' placeholder='Name' name='user_name' required disabled={spinner} />
                     <span className='focus_input'></span>
                   </div>
 
                   <div className='form_text_input'>
                     <FontAwesomeIcon className='input_img' icon={faEnvelope} />
-                    <input className='form_input' type='email' placeholder='Email' name='user_email' required />
+                    <input className='form_input' type='email' placeholder='Email' name='user_email' required disabled={spinner} />
                     <span className='focus_input'></span>
                   </div>
 
                   <div className='form_text_input'>
-                    <textarea className='form_textarea' placeholder='Message' name='message' required></textarea>
+                    <textarea className='form_textarea' placeholder='Message' name='message' required disabled={spinner}></textarea>
                     <span className='focus_input'></span>
                   </div>
-                  <button className='contact_btn' type='submit'>SEND</button>
+                  <button className={`contact_btn ${spinner ? 'spinning' : ''}`}
+                    type='submit'
+                    disabled={spinner}>
+                    {spinner ? <Spinner /> : 'Send'}
+                  </button>
                 </form>
               </div>
             </div>

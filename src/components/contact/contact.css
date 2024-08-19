@@ -167,6 +167,11 @@
   background-color: #262626e6;
 }
 
+.contact_btn.spinning {
+  background-color: #262626e6;
+  cursor: not-allowed;
+}
+
 .form_text_input {
   width: 100%;
   padding-bottom: 10px;
