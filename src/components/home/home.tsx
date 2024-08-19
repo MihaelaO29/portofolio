@@ -1,25 +1,31 @@
 import './home.css';
 import backgound from './../../images/background.jpg'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function Home() {
     const [activatedLetter, setActivatedLetter] = useState(12);
-    let time: any;
+    const timerRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
-        clearInterval(time);
-        time = setInterval(() => {
+
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+
+        timerRef.current = setInterval(() => {
             setActivatedLetter(generateRandomNumber());
         }, 1000);
-    }, [])
+
+        return () => {
+            if (timerRef.current) {
+                clearInterval(timerRef.current);
+            }
+        };
+    }, []);
 
     const generateRandomNumber = () => {
-        return Math.floor(Math.random() * 11)
-    }
-
-    useEffect(() => {
-        console.log(activatedLetter)
-    }, [activatedLetter])
+        return Math.floor(Math.random() * 11);
+    };
 
     return (
         <div className='home_section'
