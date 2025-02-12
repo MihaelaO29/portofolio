@@ -1,0 +1,214 @@
+.design_project_details {
+    background-color: #f4f3f2;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.design_project_container {
+    padding-top: 80px;
+}
+
+.about_project {
+    margin: 23px 25px 12px 20px;
+}
+
+.back_btn {
+    height: 45px;
+    width: 95px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-weight: 600;
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #b78c61;
+    color: #b78c61;
+}
+
+.project_presentation_info {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project_presentation {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project_presentation_img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 9px 8px 9px rgba(0, 0, 0, 0.2);
+}
+
+.project1_details {
+    max-width: 1200px; /* Limităm lățimea maximă pentru a evita întinderea pe ecrane mari */
+    margin: 100px auto 0 auto; /* Centrează containerul pe mijloc */
+    padding: 0 200px;
+}
+
+.project_context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project1_context_categoty {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.project1_context_details {
+    height: 300px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project1_text {
+    width: 50%;
+}
+
+.project1_additional_details {
+    width: 300px;
+}
+
+.project_additional_details_text {
+    margin-bottom: 30px;
+}
+
+.additional_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.goals {
+    display: flex;
+    flex-direction: column; /* Asigură că titlul rămâne deasupra */
+    gap: 0px; /* Spațiu între titlu și conținut */
+    padding-left:20px;
+}
+
+.goals_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; /* Spațiu între coloane */
+}
+
+.goals_text {
+    flex: 2; /* Ocupă mai mult spațiu */
+    max-width: 60%;
+}
+
+.goals_extra_info {
+    flex: 1; /* Ocupă mai puțin spațiu */
+    max-width: 35%;
+}
+
+.goals_extra_info_text {
+    margin-bottom: 20px; /* Spațiu între secțiuni */
+}
+
+.info_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(30, 30, 30, 0.71);
+    margin-bottom: 5px;
+}
+
+.challenges_img{
+    height: 420px;
+    width: auto;
+}
+
+.personas_img {
+    height: 650px;
+    width: auto;
+}
+.personas_text{
+    padding-bottom: 10px;
+}
+
+.user_flow_img {
+    display: block;
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.challenges,
+.personas,
+.research{
+    margin-top: 40px;
+    padding-left:20px
+}
+
+
+.user_flow,
+.wireframe,
+.final_result {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.goals_title,
+.challenge_title,
+.research_title,
+.personas_tile,
+.user_flow_title,
+.wireframe_title,
+.final_result_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.challenges_container,
+.personas_conatiner,
+.wireframe_container,
+.final_result_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wireframe_img {
+    height: 800px;
+    width: auto;
+}
+
+.final_result_img {
+    height: 820px;
+    width: auto;
+}
+
+.link_website{
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.webiste_button{
+    height: 70px;
+    width: 195px;
+    border-radius: 15px;
+    background-color: #b08458;
+    border: 0;
+}
+
+

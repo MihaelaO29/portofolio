@@ -13,6 +13,7 @@ import { toast } from 'react-toastify';
 import Spinner from '../../utils/spinner/spinner';
 import { useState } from 'react';
 
+
 function Contact() {
   const [spinner, setSpinner] = useState(false);
   const form = useRef<HTMLFormElement>(null);

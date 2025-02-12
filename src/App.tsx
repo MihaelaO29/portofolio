@@ -4,6 +4,9 @@ import Home from './components/home/home';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Projects from './components/projects/project';
+import Design from './components/design/design';
+import DesignProjectDetails from'./components/design-project-details/design-project-details';
+
 import Navigation from './components/navigation/navigation';
 import { useEffect } from 'react';
 import writeUserData from './utils/firebase-utils';
@@ -56,6 +59,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="/design-project-details" element={<DesignProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
