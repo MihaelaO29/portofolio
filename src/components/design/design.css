@@ -1,8 +1,18 @@
 .design_section {
-    height: 100vh; 
+    height: 100vh;
+    width: 100%;
     overflow-x: hidden;
-    background-color:#f4f3f2;
+    background-color: #f4f3f2;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.design_section_container{
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,21 +20,31 @@
 
 .design_container {
     margin-top: 80px;
+    margin: 50px 50px 50px 50px;
     height: 450px;
-    width: 1200px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     transition: 0.3s ease;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    @media only screen and (max-width: 950px){
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 90%;
+        box-shadow:none;
+    }
 }
 
 
 .design_container:hover {
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
-  }
+    @media only screen and (max-width: 950px){
+        box-shadow: none;
+    }
+}
 
 .design_text {
     width: 50%;
@@ -33,12 +53,20 @@
     align-items: center;
     background-color: #121212;
     color: white;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px; 
+    padding: 20px;
+    @media only screen and (max-width: 950px){
+        background-color: #12121200;
+        color:#121212;
+    }
 }
 
 .ux_project_title {
     font-size: 36px;
     font-weight: 800;
+    @media only screen and (max-width: 950px){
+    font-size: 26px;
+    }
 }
 
 .ux_project {
@@ -47,10 +75,14 @@
     align-items: center;
     flex-direction: column;
     align-items: flex-start;
+    @media only screen and (max-width: 950px){
+        font-size: 14px;
+        }
+
 }
 
 .ux_project_description {
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .ux_project_button {
@@ -62,21 +94,35 @@
     color: white;
     margin-top: 45px;
     cursor: pointer;
+    @media only screen and (max-width: 950px){
+        border: 1px solid black;
+        color:black;
+        }
 }
 
 .ux_project_button:hover {
-    background-color:#f4f3f2;
-    color:  #121212;
+    background-color: #f4f3f2;
+    color: #121212;
+    
 }
 
 .project_design_img {
     width: 50%;
     height: 100%;
+    @media only screen and (max-width: 950px){
+        width: 100%;
+        }
 }
 
 .project_cover_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px ; 
+    @media only screen and (max-width: 950px){
+        border-radius: 20px;
+        }
 }
+
+
+

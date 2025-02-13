@@ -1,21 +1,18 @@
-import './design-project-details.css';
+import './design-project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import project_presentation_img from '../../images/project_image1.png';
-import personas from '../../images/persona.png';
-import userflow from '../../images/userflow.png';
+import challenge from '../../images/challenges.png';
+import persona from '../../images/persona.png';
 import wireframe from '../../images/wireframe.png';
-import challenges from '../../images/challenges.png'
 import prototype from '../../images/prototype.png';
 
-function DesignProjectDetails() {
+function DesignProject() {
     const navigate = useNavigate();
 
     const goBack = () => {
         navigate('/design');
     };
-
 
     return (
         <div className='design_project_details'>
@@ -30,12 +27,11 @@ function DesignProjectDetails() {
 
                 <div className='project_presentation'>
                     <div className='project_presentation_info'>
-                        <img className='project_presentation_img' src={project_presentation_img} />
+                        <img className='project_presentation_img' src="https://i.postimg.cc/QtRfZPSQ/project-image1.png" />
                     </div>
                 </div>
 
                 <div className='project1_details'>
-
                     <div className='goals'>
                         <div className='goals_title'>Goals and Objectives</div>
                         <div className='goals_content'>
@@ -76,7 +72,7 @@ function DesignProjectDetails() {
                     <div className='challenges'>
                         <div className='challenge_title'>Challenges</div>
                         <div className='challenges_container'>
-                            <img className='challenges_img' src={challenges} />
+                            <img className='challenges_img' src={challenge}  />
                         </div>
                     </div>
 
@@ -109,13 +105,13 @@ function DesignProjectDetails() {
                             of users who will interact with the bakery's presentation website, ensuring
                             that the design and functionality of the site are tailored to meet their needs.</p>
                         <div className='personas_conatiner'>
-                            <img className='personas_img' src={personas} />
+                            <img className='personas_img' src={persona} />
                         </div>
                     </div>
 
                     <div className='user_flow'>
                         <div className='user_flow_title'>User Flow</div>
-                        <img className='user_flow_img' src={userflow} />
+                        <img className='user_flow_img' src="https://i.postimg.cc/L8TQgx6S/userflow.png" />
                     </div>
 
 
@@ -153,7 +149,7 @@ function DesignProjectDetails() {
                     <div className='link_website'>
                     <a href="https://pannibakery.md/" target="_blank">
                         <button className='webiste_button' >
-                        Visit Panni Bakery website
+                        Visit Panni Bakery Website
                         </button>
                     </a>
                     </div>
@@ -164,4 +160,4 @@ function DesignProjectDetails() {
     )
 }
 
-export default DesignProjectDetails;
+export default DesignProject;

@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
-import Projects from './components/projects/project';
+import Projects from './components/frontend/frontend';
 import Design from './components/design/design';
-import DesignProjectDetails from'./components/design-project-details/design-project-details';
-
 import Navigation from './components/navigation/navigation';
 import { useEffect } from 'react';
 import writeUserData from './utils/firebase-utils';
@@ -15,6 +13,8 @@ import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DesignProject from './components/design-project/design-project';
+import Frontend from './components/frontend/frontend';
 
 function App() {
   useEffect(() => {
@@ -58,9 +58,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/frontend" element={<Frontend />} />
           <Route path="/design" element={<Design />} />
-          <Route path="/design-project-details" element={<DesignProjectDetails />} />
+          <Route path="/design-project" element={<DesignProject />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

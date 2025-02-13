@@ -1,10 +1,10 @@
-import './projects.css';
+import './frontend.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 import projects, { Category } from '../../utils/project-utils';
 
-function Projects() {
+function Frontend() {
 	const [selectedCategory, setSelectedCategory] = useState<Category>(Category.ALL);
 
 	const handleCategoryChange = (category: Category) => {
@@ -62,4 +62,4 @@ function Projects() {
 	)
 }
 
-export default Projects;
+export default Frontend;

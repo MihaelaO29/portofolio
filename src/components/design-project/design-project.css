@@ -2,6 +2,13 @@
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
     min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .design_project_container {
@@ -29,7 +36,6 @@
 }
 
 .project_presentation_info {
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +43,11 @@
 }
 
 .project_presentation {
-    height: 100%;
+    height: auto;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .project_presentation_img {
@@ -187,28 +193,59 @@
 }
 
 .wireframe_img {
-    height: 800px;
+    height: 900px;
     width: auto;
 }
 
 .final_result_img {
-    height: 820px;
+    height: 920px;
     width: auto;
 }
 
-.link_website{
+ .link_website{
     padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.webiste_button{
-    height: 70px;
-    width: 195px;
-    border-radius: 15px;
-    background-color: #b08458;
-    border: 0;
+.webiste_button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #e0d9d2 0, #b5885c 100%);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 23px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+.webiste_button:focus {
+  box-shadow: #444444 0 0 0 1.5px inset, rgba(62, 62, 62, 0.4) 0 2px 4px, rgba(71, 71, 71, 0.3) 0 7px 13px -3px, #444444 0 -3px 0 inset;
+}
+
+.webiste_button:hover {
+  box-shadow: rgba(71, 71, 71, 0.4) 0 4px 8px, rgba(41, 41, 41, 0.3) 0 7px 13px -3px, #2b2b2b 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
 

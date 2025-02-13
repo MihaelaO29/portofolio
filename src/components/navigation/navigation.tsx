@@ -5,6 +5,7 @@ import logo from '../../images/logo.png';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import ProjectsMenu from '../menu/menu';
 
 
 function Navigation() {
@@ -28,15 +29,12 @@ function Navigation() {
     <div className='nav_section'>
       <div className='nav'>
         <Link className={`menu_link ${location?.pathname === '/' ? 'clicked' : ''}`} to='/'>  <img className='logo' src={logo} alt='logo' /></Link>
-
         {!seeMenu && (
           <FontAwesomeIcon className='bar' icon={faBars} onClick={handleOpenMenu} />
         )}
         <div className='nav_links'>
           <Link className={`menu_link ${location?.pathname === '/about' ? 'clicked' : ''}`} to='/about'>About</Link>
-          <Link className={`menu_link ${location?.pathname === '/projects' ? 'clicked' : ''}`} to='/projects'>Frontend Projects</Link>
-          <Link className={`menu_link ${location?.pathname === '/design' ? 'clicked' : ''}`} to='/design'>UI/UX Designs</Link>
-          <Link className={`menu_link ${location?.pathname === '/design' ? 'clicked' : ''}`} to='/design'>UI/UX Designs</Link>
+          <ProjectsMenu location={location?.pathname} />
           <Link className={`menu_link ${location?.pathname === '/contact' ? 'clicked' : ''}`} to='/contact'>Contact</Link>
         </div>
       </div>
@@ -45,8 +43,6 @@ function Navigation() {
           <div className='bar_menu_links'>
             <Link className={`bar_link ${location?.pathname === '/about' ? 'clicked' : ''}`} to='/about' onClick={handleLinkClick}>About</Link>
             <Link className={`bar_link ${location?.pathname === '/projects' ? 'clicked' : ''}`} to='/projects' onClick={handleLinkClick}>Projects</Link>
-            <Link className={`bar_link ${location?.pathname === '/design' ? 'clicked' : ''}`} to='/design' onClick={handleLinkClick}>UI/UX Designs</Link>
-            <Link className={`bar_link ${location?.pathname === '/design-project-details' ? 'clicked' : ''}`} to='/design-project-details' onClick={handleLinkClick}>Panni Bakery Project</Link>
             <Link className={`bar_link ${location?.pathname === '/contact' ? 'clicked' : ''}`} to='/contact' onClick={handleLinkClick}>Contact</Link>
           </div>
           <FontAwesomeIcon className='close_btn' icon={faCircleXmark} onClick={handleCloseMenu} />

@@ -7,11 +7,12 @@ function Design() {
         const navigate = useNavigate();  // Hook-ul pentru navigare
       
         const handleButtonClick = () => {
-          navigate('/design-project-details');  
+          navigate('/design-project');  
         };
 
     return (
         <div className='design_section'>
+            <div className='design_section_container'>
             <div onClick={handleButtonClick} className='design_container'>
 
                 <div className='design_text'>
@@ -23,9 +24,10 @@ function Design() {
                 </div>
                 
                 <div className='project_design_img'>
-                    <img className='project_cover_img' src={cover} />
+                    <img className='project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg"/>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
