@@ -1,67 +1,85 @@
-.design_project_details {
+ .design_project_details {
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
 
 .design_project_container {
     padding-top: 80px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    /* Centrat */
+    box-sizing: border-box;
+    /* Asigură că padding-ul este inclus în dimensiune */
+}
+
+@media (max-width: 1000px) {
+    .design_project_container {
+        max-width: 100%;
+        /* Permite containerului să ocupe întreaga lățime */
+        padding: 0 20px;
+        /* Adaugă puțin padding pentru a evita lipirea de margini */
+        margin: 0 auto;
+        /* Centrat */
+    }
 }
 
 .about_project {
-    margin: 23px 25px 12px 20px;
+    margin: 12px 0 12px 0px;
 }
 
 .back_btn {
     height: 45px;
     width: 95px;
-    border-radius: 22px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 12px;
     font-weight: 600;
-    border: 0;
+    justify-content: space-evenly;
+    border: 1px solid #b78c61;
     background-color: #ffffff;
     cursor: pointer;
-    border: 1px solid #b78c61;
     color: #b78c61;
+    margin-left: 0;
+    align-self: flex-start;
 }
+
 
 .project_presentation_info {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .project_presentation {
     height: auto;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project_presentation_img {
-    height: 100%;
-    object-fit: cover;
+    max-width: 85%;
+    height: auto;
+    display: block;
     border-radius: 20px;
-    transition: 0.3s ease;
     box-shadow: 9px 8px 9px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 .project1_details {
-    max-width: 1200px; /* Limităm lățimea maximă pentru a evita întinderea pe ecrane mari */
-    margin: 100px auto 0 auto; /* Centrează containerul pe mijloc */
-    padding: 0 200px;
+    margin: 100px auto 40px auto;
+    padding: 0 40px;
 }
 
 .project_context {
@@ -77,18 +95,19 @@
 }
 
 .project1_context_details {
-    height: 300px;
-    width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    width: 100%;
 }
 
 .project1_text {
-    width: 50%;
+    flex: 1;
 }
 
 .project1_additional_details {
-    width: 300px;
+    flex: 1;
 }
 
 .project_additional_details_text {
@@ -100,44 +119,38 @@
     font-weight: 600;
 }
 
-
 .goals {
     display: flex;
-    flex-direction: column; /* Asigură că titlul rămâne deasupra */
-    gap: 0px; /* Spațiu între titlu și conținut */
-    padding-left:20px;
+    flex-direction: column;
+    gap: 0px;
 }
 
 .goals_content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px; /* Spațiu între coloane */
+    align-items: center;
+    gap: 50px;
 }
 
 .goals_text {
-    flex: 2; /* Ocupă mai mult spațiu */
+    flex: 2;
     max-width: 60%;
 }
 
 .goals_extra_info {
-    flex: 1; /* Ocupă mai puțin spațiu */
+    flex: 1;
     max-width: 35%;
-}
-
-.goals_extra_info_text {
-    margin-bottom: 20px; /* Spațiu între secțiuni */
 }
 
 .info_title {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
-    color: rgba(30, 30, 30, 0.71);
+    color: rgba(0, 0, 0, 0.849);
     margin-bottom: 5px;
 }
 
-.challenges_img{
+.challenges_img {
     height: 420px;
     width: auto;
 }
@@ -146,8 +159,9 @@
     height: 650px;
     width: auto;
 }
-.personas_text{
-    padding-bottom: 10px;
+
+.personas_text {
+    margin-bottom: 10px;
 }
 
 .user_flow_img {
@@ -157,18 +171,21 @@
     margin: 0 auto;
 }
 
+/* 
 .challenges,
 .personas,
 .research{
     margin-top: 40px;
     padding-left:20px
-}
+} */
 
 
+.challenges,
+.personas,
+.research,
 .user_flow,
 .wireframe,
 .final_result {
-    padding: 20px;
     margin-top: 40px;
 }
 
@@ -184,12 +201,16 @@
 }
 
 .challenges_container,
-.personas_conatiner,
+.personas_container,
 .wireframe_container,
 .final_result_container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.personas_container {
+    width: 100%;
 }
 
 .wireframe_img {
@@ -202,50 +223,50 @@
     width: auto;
 }
 
- .link_website{
-    padding-bottom: 40px;
+.link_website {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
+    margin-top: 40px;
 }
 
 .webiste_button {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #e0d9d2 0, #b5885c 100%);
-  border: 0;
-  border-radius: 10px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 23px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #e0d9d2 0, #b5885c 100%);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 23px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .webiste_button:focus {
-  box-shadow: #444444 0 0 0 1.5px inset, rgba(62, 62, 62, 0.4) 0 2px 4px, rgba(71, 71, 71, 0.3) 0 7px 13px -3px, #444444 0 -3px 0 inset;
+    box-shadow: #444444 0 0 0 1.5px inset, rgba(62, 62, 62, 0.4) 0 2px 4px, rgba(71, 71, 71, 0.3) 0 7px 13px -3px, #444444 0 -3px 0 inset;
 }
 
 .webiste_button:hover {
-  box-shadow: rgba(71, 71, 71, 0.4) 0 4px 8px, rgba(41, 41, 41, 0.3) 0 7px 13px -3px, #2b2b2b 0 -3px 0 inset;
-  transform: translateY(-2px);
+    box-shadow: rgba(71, 71, 71, 0.4) 0 4px 8px, rgba(41, 41, 41, 0.3) 0 7px 13px -3px, #2b2b2b 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
-

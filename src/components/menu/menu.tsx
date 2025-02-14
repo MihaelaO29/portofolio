@@ -139,6 +139,7 @@ const MenuItem = styled(BaseMenuItem)(
   user-select: none;
   width: 100%;
   box-sizing: border-box;
+  max-width: 100%; 
 
   span {
     display: flex;
@@ -166,5 +167,6 @@ const MenuButton = styled(BaseMenuButton)(
   cursor: pointer;
   background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
   border:0;
+  max-width: 100%; 
   `,
 );
