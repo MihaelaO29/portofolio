@@ -79,7 +79,7 @@ function DesignProject() {
 
                     <div className='research'>
                         <div className='research_title'>Research</div>
-                        <div>To better understand industry standards and identify opportunities for
+                        <div className='research_text'>To better understand industry standards and identify opportunities for
                             differentiation, I conducted a competitive analysis of several artisanal
                             pastry businesses with presentation websites. This analysis focused on
                             website structure, user experience (UX), content, and visual aspects.<br />
@@ -121,10 +121,10 @@ function DesignProject() {
 
                         <div className='wireframe'>
                             <div className='wireframe_title'>Wireframe</div>
-                            <p>In the next step, I created low-fidelity wireframes to provide
+                            <div className='wireframe_text'>In the next step, I created low-fidelity wireframes to provide
                                 a visual understanding of the screens, as well as to create
                                 a prototype that will help me test and validate
-                                ideas and hypotheses.</p>
+                                ideas and hypotheses.</div>
                             <div className='wireframe_container'>
                                 <img className='wireframe_img' src={wireframe} />
                             </div>
