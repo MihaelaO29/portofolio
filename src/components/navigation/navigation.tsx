@@ -2,6 +2,9 @@ import './navigation.css';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navigation = () => {
   const location = useLocation();
@@ -45,7 +48,7 @@ const Navigation = () => {
           {/* Projects cu subcategorii */}
           <div className="projects_menu" onMouseLeave={handleMouseLeave}>
             <span
-              className={`menu_link projects_button ${['/design', '/frontend'].includes(location.pathname) ? 'clicked ' : ''}`}
+              className={`menu_link ${['/design', '/frontend'].includes(location.pathname) ? 'clicked ' : ''}`}
               onClick={handleProjectsClick}
             >
               Projects
@@ -74,8 +77,11 @@ const Navigation = () => {
       {/* Meniul hamburger */}
       <div className={`bar_menu ${isMenuOpen ? 'open' : ''}`}>
         <div className="bar_menu_links">
+          <div className='close_menu_icon' style={{ color: 'white' }} onClick={toggleMenu}><FontAwesomeIcon className='close_icon' icon={faCircleXmark} /></div>
           <Link to="/" className="bar_link" onClick={toggleMenu}>Home</Link>
           <Link to="/about" className="bar_link" onClick={toggleMenu}>About</Link>
+          <Link to="/design" className="bar_link" onClick={toggleMenu}>UX/UI Design</Link>
+          <Link to="/frontend" className="bar_link" onClick={toggleMenu}>Front-end</Link>
           <Link to="/contact" className="bar_link" onClick={toggleMenu}>Contact</Link>
         </div>
       </div>
