@@ -18,9 +18,16 @@
     align-items: center;
 }
 
+.design_section_container_title{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+
 .design_container {
     margin-top: 80px;
-    margin: 50px 50px 50px 50px;
+    margin: 0 50px 50px 50px;
     height: 450px;
     border-radius: 20px;
     display: flex;

@@ -19,8 +19,9 @@ function Frontend() {
 		<div className='projects_section'>
 			<div className='projects'>
 				<div className='project_container'>
-					<div className='project_heading'>MY PROJECTS</div>
-					<div className='projects_details'>
+				<div className='project_heading'>Front-end Projects</div>
+
+					<div className='projects_details'>	
 					</div>
 					<div className='all_projects_category'>
 						<div className='projects_category' onClick={() => handleCategoryChange(Category.ALL)}

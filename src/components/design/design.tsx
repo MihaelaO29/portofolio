@@ -13,7 +13,7 @@ function Design() {
     return (
         <div className='design_section'>
             <div className='design_section_container'>
-                <h1>UI/UX Projects</h1>
+                <h1 className='design_section_container_title'>UI/UX Projects</h1>
                 <div onClick={handleButtonClick} className='design_container'>
 
                     <div className='design_text'>
