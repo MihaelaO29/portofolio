@@ -80,27 +80,25 @@ function About() {
     <div className='about_section'>
 
       <div className='about_content'>
-        <div className='about_text'>
-          <div className='about_heading'>
-            About Me
-          </div>
-          <div className='text_description'>
-            Hi, I'm Mihaela! I'm a passionate Frontend Developer with a dedication to crafting visually
-            stunning and user-friendly web experiences. My journey in web development began with a simple
-            curiosity about how websites work, and has since evolved into a deep commitment to building intuitive,
-            responsive interfaces that delight users.
-            I have a serious passion for UI effects, animations, and creating dynamic user experiences that not
-            only look great but also feel intuitive. My goal is to blend aesthetic design with seamless functionality,
-            ensuring every project I work on is both beautiful and easy to use.<br/>
-            Thank you for visiting my portfolio! I look forward to the opportunity to collaborate and create something
-            amazing together.
-            <br />
-          </div>
+        <div className='about_title'>
+          About Me
+        </div>
+        <div className='about_description'>
+          Hi, I'm Mihaela! I'm a passionate Frontend Developer with a dedication to crafting visually
+          stunning and user-friendly web experiences. My journey in web development began with a simple
+          curiosity about how websites work, and has since evolved into a deep commitment to building intuitive,
+          responsive interfaces that delight users.
+          I have a serious passion for UI effects, animations, and creating dynamic user experiences that not
+          only look great but also feel intuitive. My goal is to blend aesthetic design with seamless functionality,
+          ensuring every project I work on is both beautiful and easy to use.<br />
+          Thank you for visiting my portfolio! I look forward to the opportunity to collaborate and create something
+          amazing together.
+          <br />
         </div>
       </div>
 
 
-      <div className='skills_details'>
+      <div className='about_skills'>
         <div className="skills_container">
           <h1>Skills</h1>
           <div className="skills_grid">
