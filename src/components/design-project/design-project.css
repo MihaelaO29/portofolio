@@ -1,17 +1,15 @@
  .design_project_details {
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
+    height: calc(100vh - 80px);
     overflow-x: hidden;
     width: 100%;
-    display: block;
     margin: 0;
     padding: 0;
  }
 
 
 .design_project_container {
-    padding-top: 80px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
