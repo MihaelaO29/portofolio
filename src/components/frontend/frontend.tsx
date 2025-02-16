@@ -36,25 +36,25 @@ function Frontend() {
 							style={{ backgroundColor: selectedCategory === Category.REACT ? '#262626e6' : 'rgb(26 26 26 / 0%)' }}
 						>React</div>
 					</div>
+				</div>
 
-					<div className='all_projects'>
-						<div className='projects_grid'>
-							{filteredProjects.map((project) => (
-								<div className='card'>
-									<div
-										className="cover"
-										style={{
-											backgroundImage: `url(${project.image})`
-										}}
-									>
-										<div className='card_back'>
-											<a className='card_description' href={project.linkProject} target="_blank" rel="noreferrer">See project</a>
-											<a className='card_link' href={project.linkGitHub} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-										</div>
+				<div className='all_projects'>
+					<div className='projects_grid'>
+						{filteredProjects.map((project) => (
+							<div className='card'>
+								<div
+									className="cover"
+									style={{
+										backgroundImage: `url(${project.image})`
+									}}
+								>
+									<div className='card_back'>
+										<a className='card_description' href={project.linkProject} target="_blank" rel="noreferrer">See project</a>
+										<a className='card_link' href={project.linkGitHub} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
 									</div>
 								</div>
-							))}
-						</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

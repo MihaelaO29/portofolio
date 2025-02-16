@@ -41,7 +41,6 @@ function App() {
 
   return (
     <Router>
-      <div>
         <ToastContainer
           position="bottom-center"
           autoClose={5000}
@@ -63,7 +62,6 @@ function App() {
           <Route path="/design-project" element={<DesignProject />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </div>
     </Router>
   );
 }
