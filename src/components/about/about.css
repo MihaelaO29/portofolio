@@ -2,6 +2,7 @@
    background-color: #f4f4f4;
    width: 100vw;
    height: calc(100vh - 80px);
+   overflow-y: scroll;
  }
 
  .about_content {
