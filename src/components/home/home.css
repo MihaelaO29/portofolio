@@ -1,7 +1,8 @@
 .home_section {
-	height: 100vh;
+	height: calc(100vh - 80px);
 	width: 100vw;
 	font-family: "Exo 2", sans-serif;
+	overflow-y: scroll;
 }
 
 .home {
@@ -102,14 +103,16 @@
 	line-height: 1;
 	color: white;
 	cursor: default;
-	@media only screen and (max-width: 1000px) {
+	text-align: center;
+	@media only screen and (max-width: 1500px) {
 		font-size: 20px;
 		letter-spacing: 10px;
+		margin: 0 50px;
 	 }  
-	 @media only screen and (max-width: 500px) {
-		font-size: 15px;
-		letter-spacing: 5px;
+	 @media only screen and (max-width: 800px) {
+		font-size: 17px;
 	 }  
+	
 }
 
 .active_letter {

@@ -102,7 +102,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='home_content_description'>FRONT END DEVELOPER</div>
+                    <div className='home_content_description'> UX/UI Designer & FRONT END DEVELOPER</div>
                 </div>
             </div>
         </div>
