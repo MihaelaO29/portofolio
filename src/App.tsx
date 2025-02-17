@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
-import Projects from './components/frontend/frontend';
 import Design from './components/design/design';
 import Navigation from './components/navigation/navigation';
 import { useEffect } from 'react';
