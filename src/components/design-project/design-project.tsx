@@ -135,12 +135,16 @@ function DesignProject() {
                             <div> The final part of this project is the creation of a clear and distinct identity
                                 for the bakery's presentation website, reflecting the essence of the brand.
                                 My goal was to create an inviting and emotional experience for users, emphasizing the
-                                beauty of the products and the tradition behind them. This final design successfully
+                                beauty of the products and the tradition behind them. <br />
+                                <br />
+                                 This final design successfully
                                 combines aesthetic appeal with functionality, providing a pleasant and easy-to-use
                                 experience that reflects the artisanal values of the bakery, while also facilitating
                                 the discovery and interaction of customers with the products.
                                 Throughout the design process, I employed user-centered principles, incorporating feedback from real users
-                                through usability tests to ensure an intuitive interface. The visual elements, including colors, fonts,
+                                through usability tests to ensure an intuitive interface. <br /> 
+                                <br />
+                                The visual elements, including colors, fonts,
                                 and images, were thoughtfully chosen to evoke the bakery’s traditional values while remaining modern and
                                 fresh.
                                 With the high-fidelity prototype, the design not only meets the functional needs but also resonates

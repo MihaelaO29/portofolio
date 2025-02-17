@@ -6,7 +6,6 @@
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .design_section_container {
@@ -21,7 +20,7 @@
     font-weight: 700;
     padding-top: 50px;
     @media only screen and (max-width: 950px) {
-       font-size: 35px;
+       font-size: 30px;
     }
 }
 
@@ -67,15 +66,16 @@
     @media only screen and (max-width: 950px) {
         background-color: #12121200;
         color: #121212;
+        padding: 0px;
     }
 }
 
 .ux_project_title {
-    font-size: 36px;
+    font-size: 35px;
     font-weight: 800;
 
     @media only screen and (max-width: 950px) {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
@@ -88,12 +88,19 @@
 
     @media only screen and (max-width: 950px) {
         font-size: 14px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+          
     }
 
 }
 
 .ux_project_description {
     margin-top: 10px;
+    @media only screen and (max-width: 950px) {
+    width: 100%;
+    }
 }
 
 .ux_project_button {
@@ -120,13 +127,9 @@
 
 .project_design_img {
     width: 50%;
-    height: 100%;
 
     @media only screen and (max-width: 950px) {
         width: 100%;
-    }
-    @media only screen and (max-width: 950px) {
-        width: 70%;
     }
 }
 
