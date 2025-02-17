@@ -1,5 +1,4 @@
 import './design.css';
-import cover from '../../images/black_background.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function Design() {
@@ -25,7 +24,7 @@ function Design() {
                     </div>
 
                     <div className='project_design_img'>
-                        <img className='project_cover_img' src={cover} alt='ux_project_image' />
+                        <img className='project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" alt='ux_project_image' />
                     </div>
                 </div>
             </div>
