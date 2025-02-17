@@ -12,6 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 700px) {
+        margin-top: -220px;
+    }
+    @media only screen and (max-width: 450px) {
+        margin-top: -180px;
+    }
 }
 
 .project_container {
@@ -31,8 +37,8 @@
     margin:0;
 
     @media only screen and (max-width: 700px) {
-        height: 190px;
-        font-size: 35px;
+        height: 70px;
+        font-size: 30px;
     }
 }
 
