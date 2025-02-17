@@ -27,7 +27,7 @@ function DesignProject() {
 
                 <div className='project_presentation'>
                     <div className='project_presentation_info'>
-                        <img className='project_presentation_img' src="https://i.postimg.cc/QtRfZPSQ/project-image1.png" />
+                        <img className='project_presentation_img' src="https://i.postimg.cc/QtRfZPSQ/project-image1.png" alt='project_presentation_image' />
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@ function DesignProject() {
                     <div className='challenges'>
                         <div className='challenge_title'>Challenges</div>
                         <div className='challenges_container'>
-                            <img className='challenges_img' src={challenge} />
+                            <img className='challenges_img' src={challenge} alt='challenges'/>
                         </div>
                     </div>
 
@@ -109,13 +109,13 @@ function DesignProject() {
                                 of users who will interact with the bakery's presentation website, ensuring
                                 that the design and functionality of the site are tailored to meet their needs.</p>
                             <div className='personas_container'>
-                                <img className='personas_img' src={persona} />
+                                <img className='personas_img' src={persona} alt='personas'/>
                             </div>
                         </div>
 
                         <div className='user_flow'>
                             <div className='user_flow_title'>User Flow</div>
-                            <img className='user_flow_img' src="https://i.postimg.cc/L8TQgx6S/userflow.png" />
+                            <img className='user_flow_img' src="https://i.postimg.cc/L8TQgx6S/userflow.png" alt='user flow' />
                         </div>
 
 
@@ -126,7 +126,7 @@ function DesignProject() {
                                 a prototype that will help me test and validate
                                 ideas and hypotheses.</div>
                             <div className='wireframe_container'>
-                                <img className='wireframe_img' src={wireframe} />
+                                <img className='wireframe_img' src={wireframe} alt='wireframe'/>
                             </div>
                         </div>
 
@@ -151,7 +151,7 @@ function DesignProject() {
                                 emotionally with the users, encouraging them to connect with the bakery’s story.
                                 </div >        
                             <div className='final_result_container'>
-                                <img className='final_result_img' src={prototype} />
+                                <img className='final_result_img' src={prototype} alt='prototype'/>
                             </div>
                             </div >
                        

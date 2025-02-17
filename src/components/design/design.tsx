@@ -25,7 +25,7 @@ function Design() {
                     </div>
 
                     <div className='project_design_img'>
-                        <img className='project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" />
+                        <img className='project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" alt='ux_project_image' />
                     </div>
                 </div>
             </div>
