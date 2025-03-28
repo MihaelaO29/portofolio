@@ -1,4 +1,4 @@
-import './design-project.css';
+import './panny-design-project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
@@ -7,7 +7,7 @@ import persona from '../../images/persona.png';
 import wireframe from '../../images/wireframe.png';
 import prototype from '../../images/prototype.png';
 
-function DesignProject() {
+function PannyDesignProject() {
     const navigate = useNavigate();
 
     const goBack = () => {
@@ -15,13 +15,12 @@ function DesignProject() {
     };
 
     return (
-        <div className='design_project_details'>
-            <div className='design_project_container'>
+        <div className='panny_design_project_details'>
+            <div className='panny_design_project_container'>
 
                 <div className='about_project'>
-                    <button className='back_btn' onClick={goBack}>
+                    <button className='back_btn_project' onClick={goBack}>
                         <FontAwesomeIcon icon={faArrowLeft} className='back_icon' />
-                        Go back
                     </button>
                 </div>
 
@@ -170,4 +169,4 @@ function DesignProject() {
             )
 }
 
-            export default DesignProject;
+            export default PannyDesignProject;

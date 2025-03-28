@@ -12,7 +12,8 @@ import { v4 as uuidv4 } from 'uuid';
 import moment from 'moment';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import DesignProject from './components/design-project/design-project';
+import PannyDesignProject from './components/panny-design-project/panny-design-project';
+import NailsDesignProject from'./components/nails-design-project/nails-design-project';
 import Frontend from './components/frontend/frontend';
 
 function App() {
@@ -58,7 +59,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/frontend" element={<Frontend />} />
           <Route path="/design" element={<Design />} />
-          <Route path="/design-project" element={<DesignProject />} />
+          <Route path="/panny-design-project" element={<PannyDesignProject />} />
+          <Route path="/nails-design-project" element={<NailsDesignProject />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>

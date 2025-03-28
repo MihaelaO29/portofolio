@@ -1,4 +1,4 @@
- .design_project_details {
+ .panny_design_project_details {
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
     height: calc(100vh - 80px);
@@ -9,7 +9,7 @@
  }
 
 
-.design_project_container {
+.panny_design_project_container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -27,23 +27,19 @@
     margin: 12px 0 12px 0px;
 }
 
-.back_btn {
-    height: 45px;
-    width: 95px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    justify-content: space-evenly;
-    border: 1px solid #b78c61;
-    background-color: #ffffff;
-    cursor: pointer;
-    color: #b78c61;
-    display: flex !important; 
-    margin-top: 20px; 
-    align-self: flex-start;
+.back_btn_project{
+    display: inline-flex;
     align-items: center;
-    position: relative; 
-    z-index: 10; 
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
     @media (max-width: 1250px) {
         margin-left: 50px; 
     }
@@ -55,6 +51,11 @@
     }
 }
 
+
+.back_icon{
+    height: 18px;
+    color:rgb(87 87 87);
+}
 
 
 .project_presentation_info {

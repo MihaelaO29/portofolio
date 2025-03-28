@@ -1,0 +1,27 @@
+.nails_design_project_details{
+    background-color: #f4f3f2;
+    font-family: Arial, sans-serif;
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nails_design_project_container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.nails_design_img_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.nails_design_img{
+    width: 700px;
+}

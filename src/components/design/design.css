@@ -1,11 +1,11 @@
 .design_section {
-    height: calc(100vh - 80px);
     width: 100%;
     overflow-x: hidden;
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .design_section_container {
@@ -15,19 +15,43 @@
     align-items: center;
 }
 
-.design_section_container_title{
+.design_section_container_title {
     font-size: 50px;
     font-weight: 700;
-    padding-top: 25px;
-    @media only screen and (max-width: 950px) {
-       font-size: 30px;
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 30px;
     }
 }
 
-.design_container {
-    margin-top: 80px;
-    margin: 0 50px 50px 50px;
-    height: 450px;
+.nails_ux_project_title {
+    color: #121212;
+}
+
+
+.nails_ux_project_title,
+.panny_ux_project_title {
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 25px;
+
+    @media only screen and (max-width: 1300px) {
+        font-size: 35px;
+
+    }
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 25px;
+    }
+}
+
+.panny_design_container,
+.nails_design_container {
+    margin: 0px 150px 100px 150px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -35,110 +59,128 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
-        width: 76%;
         box-shadow: none;
     }
 }
 
-
-.design_container:hover {
+.panny_design_container:hover,
+.nails_design_container:hover {
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1000px) {
         box-shadow: none;
     }
 }
 
-.design_text {
-    width: 50%;
+
+.panny_design_text {
+    background-color: #121212;
+}
+
+.nails_design_text {
+    background-color: #e6b1c3
+}
+
+.panny_design_text,
+.nails_design_text {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
     color: white;
     border-radius: 20px 0 0 20px;
-    padding: 20px;
 
-    @media only screen and (max-width: 950px) {
-        background-color: #12121200;
+    @media only screen and (max-width: 1000px) {
         color: #121212;
         padding: 0px;
+        background-color: transparent;
     }
 }
 
-.ux_project_title {
-    font-size: 35px;
-    font-weight: 800;
-
-    @media only screen and (max-width: 950px) {
-        font-size: 22px;
-    }
-}
-
-.ux_project {
+.panny_ux_project,
+.nails_ux_project {
+    padding: 20px;
     width: 300px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: flex-start;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1300px) {
+        width: 200px;
+
+    }
+
+    @media only screen and (max-width: 1100px) {
         font-size: 14px;
         margin-bottom: 25px;
         display: flex;
-          
+
     }
 
 }
 
-.ux_project_description {
+.nails_ux_project_description {
+    color: #121212;
+}
+
+.panny_ux_project_description,
+.nails_ux_project_description {
     margin-top: 10px;
-    @media only screen and (max-width: 950px) {
-    width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
     }
 }
 
-.ux_project_button {
+.panny_ux_project_button,
+.nails_ux_project_button {
     height: 50px;
     width: 128px;
     border-radius: 14px;
     background-color: transparent;
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     color: white;
     margin-top: 45px;
+    font-weight: 600;
     cursor: pointer;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1000px) {
         border: 1px solid black;
         color: black;
     }
 }
 
-.ux_project_button:hover {
+.panny_ux_project_button:hover,
+.nails_ux_project_button:hover {
     background-color: #f4f3f2;
     color: #121212;
 
 }
 
-.project_design_img {
-    width: 50%;
+.panny_project_design_img,
+.nails_project_design_img {
+    width: 60%;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width:1000px) {
         width: 100%;
     }
 }
 
-.project_cover_img {
+.panny_project_cover_img {
+    object-fit: cover;
+}
+
+.panny_project_cover_img,
+.nails_project_cover_img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 0 20px 20px 0;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 1000px) {
         border-radius: 20px;
     }
 }
