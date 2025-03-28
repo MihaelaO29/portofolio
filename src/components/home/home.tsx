@@ -1,5 +1,4 @@
 import './home.css';
-import backgound from './../../images/background.jpg'
 import { useEffect, useRef, useState } from 'react';
 
 function Home() {
@@ -30,7 +29,7 @@ function Home() {
     return (
         <div className='home_section'
             style={{
-                backgroundImage: `url(${backgound})`,
+                backgroundImage: `url(https://i.postimg.cc/Dn7SVCtx/background.jpg)`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
