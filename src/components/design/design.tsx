@@ -29,7 +29,7 @@ function Design() {
                     </div>
 
                     <div className='panny_project_design_img'>
-                        <img className='panny_project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" alt='ux project image' />
+                        <img className='panny_project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" alt='ux project backery image' />
                     </div>
                 </div>
          
@@ -45,7 +45,7 @@ function Design() {
                 </div>
 
                 <div className='nails_project_design_img'>
-                    <img className='nails_project_cover_img' src="https://i.postimg.cc/6B962DMZ/nail-project.png"  alt='ux project image' />
+                    <img className='nails_project_cover_img' src="https://i.postimg.cc/6B962DMZ/nail-project.png"  alt='ux project nailsimage' />
                 </div>
             </div>
             </div>
