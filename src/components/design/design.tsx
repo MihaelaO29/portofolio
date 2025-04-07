@@ -1,5 +1,8 @@
 import './design.css';
 import { useNavigate } from 'react-router-dom';
+import panny_project_cover from '../../images/black_background.webp'
+import nails_project_cover from '../../images/nail_project.webp';
+
 
 
 function Design() {
@@ -29,7 +32,7 @@ function Design() {
                     </div>
 
                     <div className='panny_project_design_img'>
-                        <img className='panny_project_cover_img' src="https://i.postimg.cc/vTrtFm4y/black-background.jpg" alt='backery' />
+                        <img className='panny_project_cover_img' src={panny_project_cover} alt='backery' />
                     </div>
                 </div>
          
@@ -45,7 +48,7 @@ function Design() {
                 </div>
 
                 <div className='nails_project_design_img'>
-                    <img className='nails_project_cover_img' src="https://i.postimg.cc/6B962DMZ/nail-project.png"  alt='nails_artist' />
+                    <img className='nails_project_cover_img' src={nails_project_cover}  alt='nails_artist' />
                 </div>
             </div>
             </div>

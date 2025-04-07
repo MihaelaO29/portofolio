@@ -2,6 +2,7 @@ import './nails-design-project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import nails_project_img from '../../images/frame_nails.webp'
 
 
 function NailsDesignProject() {
@@ -24,7 +25,7 @@ function NailsDesignProject() {
                 </div>
 
                 <div className='nails_design_img_section'>
-                    <img className='nails_design_img' src="https://i.postimg.cc/9VMkxVfb/Frame-27.png" alt='nail' />
+                    <img className='nails_design_img' src={nails_project_img} alt='nail' />
                 </div>
             </div>
         </div>

@@ -2,10 +2,11 @@ import './panny-design-project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import challenge from '../../images/challenges.png';
-import persona from '../../images/persona.png';
-import wireframe from '../../images/wireframe.png';
-import prototype from '../../images/prototype.png';
+import challenge from '../../images/challenges.webp';
+import persona from '../../images/persona.webp';
+import wireframe from '../../images/wireframe.webp';
+import prototype from '../../images/prototype.webp';
+import project_presentation from '../../images/project_image1.webp';
 
 function PannyDesignProject() {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ function PannyDesignProject() {
 
                 <div className='project_presentation'>
                     <div className='project_presentation_info'>
-                        <img className='project_presentation_img' src="https://i.postimg.cc/QtRfZPSQ/project-image1.png" alt='project_presentation_image' />
+                        <img className='project_presentation_img' src={project_presentation} />
                     </div>
                 </div>
 
