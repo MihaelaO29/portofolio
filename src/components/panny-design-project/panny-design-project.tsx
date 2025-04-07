@@ -27,7 +27,7 @@ function PannyDesignProject() {
 
                 <div className='project_presentation'>
                     <div className='project_presentation_info'>
-                        <img className='project_presentation_img' src={project_presentation} />
+                        <img className='project_presentation_img' src={project_presentation} alt='panny-project'/>
                     </div>
                 </div>
 
