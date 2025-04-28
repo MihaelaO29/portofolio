@@ -43,7 +43,7 @@ function Design() {
                     <div className='nails_ux_project'>
                         <div className='nails_ux_project_title'>Nails Artist</div>
                         <div className='nails_ux_project_description'>See a modern and elegant presentation website for a Nail Artist.</div>
-                        <button onClick={handleButtonClickProject2} className='nails_ux_project_button'>View Project</button>
+                        <button onClick={handleButtonClickProject2} className='nails_ux_project_button'>View Case Study</button>
                     </div>
                 </div>
 
