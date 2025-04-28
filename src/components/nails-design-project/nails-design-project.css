@@ -1,4 +1,4 @@
-.nails_design_project_details{
+.nadini_design_project_details {
     background-color: #f4f3f2;
     font-family: Arial, sans-serif;
     height: calc(100vh - 80px);
@@ -8,29 +8,143 @@
     padding: 0;
 }
 
-.nails_design_project_container {
+
+.nadini_design_project_container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.nails_design_img_section{
+.nadini_design_img_section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.nails_design_img{
+.nadini_design_img {
     width: 700px;
+
     @media (max-width: 800px) {
         width: 600px;
     }
+
     @media (max-width: 650px) {
         width: 400px;
     }
+
     @media (max-width: 500px) {
         width: 280px;
+    }
+}
+
+.back_btn_project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    @media (max-width: 1250px) {
+        margin-left: 50px;
+    }
+
+    @media (max-width: 900px) {
+        height: 30px;
+        width: 65px;
+        font-size: 9px;
+    }
+}
+
+.nadini_goals_title,
+.nadini_challenges_title,
+.nadini_research_title,
+.nadini_personas_title,
+.nadini_result_title,
+.nadini_wireframe_title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (max-width: 900px) {
+        font-size: 25px;
+    }
+}
+
+
+.nadini_challenges,
+.nadini_research,
+.nadini_personas,
+.nadini_result,
+.nadini_wireframe {
+    margin-top: 60px;
+}
+
+
+.nadini_result_container,
+.nadini_personas_container,
+.nadini_wireframe_conainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nadini_personas_img {
+    width: 950px;
+    border-radius: 20px;
+
+    @media (max-width: 1000px) {
+        width: 800px;
+    }
+
+    @media (max-width: 840px) {
+        width: 650px;
+    }
+
+    @media (max-width: 700px) {
+        width: 500px;
+    }
+
+    @media (max-width: 550px) {
+        width: 350px;
+    }
+
+    @media (max-width: 400px) {
+        width: 270px;
+    }
+}
+
+.nadini_result_img,
+.nadini_wireframe_img {
+    width: 1116px;
+    margin-top: 40px;
+
+    @media (max-width: 1150px) {
+        width: 650px;
+    }
+
+    @media (max-width: 920px) {
+        width: 500px;
+    }
+
+    @media (max-width: 700px) {
+        width: 400px;
+    }
+
+    @media (max-width: 550px) {
+        width: 350px;
+    }
+
+    @media (max-width: 450px) {
+        width: 250px;
     }
 }

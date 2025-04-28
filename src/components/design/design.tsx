@@ -1,7 +1,7 @@
 import './design.css';
 import { useNavigate } from 'react-router-dom';
 import panny_project_cover from '../../images/black_background.webp'
-import nails_project_cover from '../../images/nail_project.webp';
+import nadini_project_cover from '../../images/nadini_project.png';
 
 
 
@@ -48,7 +48,7 @@ function Design() {
                 </div>
 
                 <div className='nails_project_design_img'>
-                    <img className='nails_project_cover_img' src={nails_project_cover}  alt='nails_artist' />
+                    <img className='nails_project_cover_img' src={nadini_project_cover}  alt='nails_artist' />
                 </div>
             </div>
             </div>

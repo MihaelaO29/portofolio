@@ -27,7 +27,7 @@ function PannyDesignProject() {
 
                 <div className='project_presentation'>
                     <div className='project_presentation_info'>
-                        <img className='project_presentation_img' src={project_presentation} alt='panny-project'/>
+                        <img className='project_presentation_img' src={project_presentation} alt='panny-project' />
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@ function PannyDesignProject() {
                     <div className='challenges'>
                         <div className='challenge_title'>Challenges</div>
                         <div className='challenges_container'>
-                            <img className='challenges_img' src={challenge} alt='challenges'/>
+                            <img className='challenges_img' src={challenge} alt='challenges' />
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ function PannyDesignProject() {
                             differentiation, I conducted a competitive analysis of several artisanal
                             pastry businesses with presentation websites. This analysis focused on
                             website structure, user experience (UX), content, and visual aspects.<br />
-                         
+
                             I examined 5 competitors, both direct (similar artisanal bakeries)
                             and indirect (bakeries, confectioneries offering artisanal products).<br />
                             <br />
@@ -102,72 +102,72 @@ function PannyDesignProject() {
                             a detailed presentation of the products, an authentic brand story, and simple
                             navigation to create a pleasant and easy-to-use experience for customers.
                         </div>
-                        </div>
-                        <div className='personas'>
-                            <p className='personas_tile'>Personas</p>
-                            <p className='personas_text'>Creating a persona helps gain a deeper understanding of the different types
-                                of users who will interact with the bakery's presentation website, ensuring
-                                that the design and functionality of the site are tailored to meet their needs.</p>
-                            <div className='personas_container'>
-                                <img className='personas_img' src={persona} alt='personas'/>
-                            </div>
-                        </div>
-
-                        <div className='user_flow'>
-                            <div className='user_flow_title'>User Flow</div>
-                            <img className='user_flow_img' src="https://i.postimg.cc/L8TQgx6S/userflow.png" alt='user flow' />
-                        </div>
-
-
-                        <div className='wireframe'>
-                            <div className='wireframe_title'>Wireframe</div>
-                            <div className='wireframe_text'>In the next step, I created low-fidelity wireframes to provide
-                                a visual understanding of the screens, as well as to create
-                                a prototype that will help me test and validate
-                                ideas and hypotheses.</div>
-                            <div className='wireframe_container'>
-                                <img className='wireframe_img' src={wireframe} alt='wireframe'/>
-                            </div>
-                        </div>
-
-                        <div className='final_result'>
-                            <div className='final_result_title'>Final result</div>
-                            <div> The final part of this project is the creation of a clear and distinct identity
-                                for the bakery's presentation website, reflecting the essence of the brand.
-                                My goal was to create an inviting and emotional experience for users, emphasizing the
-                                beauty of the products and the tradition behind them. <br />
-                                <br />
-                                 This final design successfully
-                                combines aesthetic appeal with functionality, providing a pleasant and easy-to-use
-                                experience that reflects the artisanal values of the bakery, while also facilitating
-                                the discovery and interaction of customers with the products.
-                                Throughout the design process, I employed user-centered principles, incorporating feedback from real users
-                                through usability tests to ensure an intuitive interface. <br /> 
-                                <br />
-                                The visual elements, including colors, fonts,
-                                and images, were thoughtfully chosen to evoke the bakery’s traditional values while remaining modern and
-                                fresh.
-                                With the high-fidelity prototype, the design not only meets the functional needs but also resonates
-                                emotionally with the users, encouraging them to connect with the bakery’s story.
-                                </div >        
-                            <div className='final_result_container'>
-                                <img className='final_result_img' src={prototype} alt='prototype'/>
-                            </div>
-                            </div >
-                       
-
-                        <div className='link_website'>
-                            <a href="https://pannibakery.md/" target="_blank" rel="noreferrer">
-                                <button className='webiste_button' >
-                                    Visit Panni Bakery Website
-                                </button>
-                            </a>
-                        </div>
-
                     </div>
+                    <div className='personas'>
+                        <p className='personas_tile'>Personas</p>
+                        <p className='personas_text'>Creating a persona helps gain a deeper understanding of the different types
+                            of users who will interact with the bakery's presentation website, ensuring
+                            that the design and functionality of the site are tailored to meet their needs.</p>
+                        <div className='personas_container'>
+                            <img className='personas_img' src={persona} alt='personas' />
+                        </div>
+                    </div>
+
+                    <div className='user_flow'>
+                        <div className='user_flow_title'>User Flow</div>
+                        <img className='user_flow_img' src="https://i.postimg.cc/L8TQgx6S/userflow.png" alt='user flow' />
+                    </div>
+
+
+                    <div className='wireframe'>
+                        <div className='wireframe_title'>Wireframe</div>
+                        <div className='wireframe_text'>In the next step, I created low-fidelity wireframes to provide
+                            a visual understanding of the screens, as well as to create
+                            a prototype that will help me test and validate
+                            ideas and hypotheses.</div>
+                        <div className='wireframe_container'>
+                            <img className='wireframe_img' src={wireframe} alt='wireframe' />
+                        </div>
+                    </div>
+
+                    <div className='final_result'>
+                        <div className='final_result_title'>Final result</div>
+                        <div> The final part of this project is the creation of a clear and distinct identity
+                            for the bakery's presentation website, reflecting the essence of the brand.
+                            My goal was to create an inviting and emotional experience for users, emphasizing the
+                            beauty of the products and the tradition behind them. <br />
+                            <br />
+                            This final design successfully
+                            combines aesthetic appeal with functionality, providing a pleasant and easy-to-use
+                            experience that reflects the artisanal values of the bakery, while also facilitating
+                            the discovery and interaction of customers with the products.
+                            Throughout the design process, I employed user-centered principles, incorporating feedback from real users
+                            through usability tests to ensure an intuitive interface. <br />
+                            <br />
+                            The visual elements, including colors, fonts,
+                            and images, were thoughtfully chosen to evoke the bakery’s traditional values while remaining modern and
+                            fresh.
+                            With the high-fidelity prototype, the design not only meets the functional needs but also resonates
+                            emotionally with the users, encouraging them to connect with the bakery’s story.
+                        </div >
+                        <div className='final_result_container'>
+                            <img className='final_result_img' src={prototype} alt='prototype' />
+                        </div>
+                    </div >
+
+
+                    <div className='link_website'>
+                        <a href="https://pannibakery.md/" target="_blank" rel="noreferrer">
+                            <button className='webiste_button' >
+                                Visit Panni Bakery Website
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            )
+        </div>
+    )
 }
 
-            export default PannyDesignProject;
+export default PannyDesignProject;
