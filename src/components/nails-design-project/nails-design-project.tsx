@@ -78,7 +78,7 @@ function NailsDesignProject() {
                             <div className='nadini_personas_title'>Personas</div>
                             <div>
                                 <div className='nadini_personas_container'>
-                                    <img className='nadini_personas_img' src={nadini_personas} />
+                                    <img className='nadini_personas_img' src={nadini_personas} alt='personas' />
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ function NailsDesignProject() {
                             </div>
                             <div>
                                 <div className='nadini_wireframe_conainer'>
-                                    <img className='nadini_wireframe_img' src={nadini_wireframe} />
+                                    <img className='nadini_wireframe_img' src={nadini_wireframe} alt='wireframe' />
                                 </div>
                             </div>
                         </div>
