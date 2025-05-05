@@ -14,6 +14,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PannyDesignProject from './components/panny-design-project/panny-design-project';
 import NailsDesignProject from'./components/nails-design-project/nails-design-project';
+import FurnivioDesignProject from './components/furnivio-design-project/furnivio-design-project';
 import Frontend from './components/frontend/frontend';
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           <Route path="/design" element={<Design />} />
           <Route path="/panny-design-project" element={<PannyDesignProject />} />
           <Route path="/nails-design-project" element={<NailsDesignProject />} />
+          <Route path="/furnivio-design-project" element={<FurnivioDesignProject />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>

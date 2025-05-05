@@ -1,0 +1,44 @@
+.furnivio_design_project_details{
+    background-color: #f4f3f2;
+    font-family: Arial, sans-serif;
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.furnivio_design_project_container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.furnivio_project_presentation{
+    display: flex;
+    justify-content: center;
+}
+
+.furnvio_app{
+    width: 1200px;
+    margin: 30px 0 30px 0; 
+    @media only screen and (max-width: 1250px) {
+       width: 950px;
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 750px;
+     }
+     @media only screen and (max-width: 800px) {
+        width: 550px;
+     }
+     @media only screen and (max-width: 650px) {
+        width: 450px;
+     }
+     @media only screen and (max-width: 470px) {
+        width: 380px;
+     }
+     @media only screen and (max-width: 400px) {
+        width: 300px;
+     }
+}
