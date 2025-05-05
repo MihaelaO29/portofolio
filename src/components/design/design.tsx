@@ -2,7 +2,7 @@ import './design.css';
 import { useNavigate } from 'react-router-dom';
 import panny_project_cover from '../../images/black_background.webp'
 import nadini_project_cover from '../../images/nadini_project.png';
-import furnivio_project_cover from '../../images/furnivio_project.png'
+import furnivio_project_cover from '../../images/furnivio_project.png';
 
 
 function Design() {

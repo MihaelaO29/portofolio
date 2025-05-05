@@ -2,7 +2,7 @@ import './furnivio-design-project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import furnivio_app from '../../images/furnivio_app.png'
+import furnivio_app from '../../images/furnivio_app.webp';
 
 
 function FurnivioDesignProject() {
