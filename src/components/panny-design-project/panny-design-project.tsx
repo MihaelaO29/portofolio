@@ -156,13 +156,13 @@ function PannyDesignProject() {
                     </div >
 
 
-                    <div className='link_website'>
+                    {/* <div className='link_website'>
                         <a href="https://pannibakery.md/" target="_blank" rel="noreferrer">
                             <button className='webiste_button' >
                                 Visit Panni Bakery Website
                             </button>
                         </a>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
