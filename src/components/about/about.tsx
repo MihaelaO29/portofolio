@@ -66,10 +66,10 @@ function About() {
       imageUrl: npm,
       name: "Npm",
     },
-    {
-      imageUrl: framer,
-      name: "Framer",
-    },
+    // {
+    //   imageUrl: framer,
+    //   name: "Framer",
+    // },
     {
       imageUrl: figma,
       name: "Figma",
