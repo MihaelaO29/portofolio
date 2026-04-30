@@ -1,5 +1,5 @@
 import './about.css';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import html from '../../images/html.svg';
 import css from '../../images/css.svg';
 import javascript from '../../images/javascript.svg';
@@ -11,7 +11,7 @@ import gitHub from '../../images/github.svg';
 import gitLab from '../../images/gitlab.svg';
 import responsive from '../../images/responsive.svg';
 import npm from '../../images/npm.svg';
-import framer from '../../images/framer.svg';
+// import framer from '../../images/framer.svg';
 import figma from '../../images/figma.svg';
 
 
