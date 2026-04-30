@@ -1,5 +1,5 @@
 import './about.css';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import html from '../../images/html.svg';
 import css from '../../images/css.svg';
 import javascript from '../../images/javascript.svg';
